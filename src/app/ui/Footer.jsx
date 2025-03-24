@@ -1,0 +1,112 @@
+import { useState } from "react"
+import { useRouter } from 'next/navigation'
+import Image from 'next/image'
+import { FaXTwitter, FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa6";
+import { IconContext } from "react-icons";
+import MDVFS_Logo_Stroke from '../../../public/mdvfs_logo_web_stroke.svg'
+
+
+
+
+const Footer = () => {
+
+    const router = useRouter()
+
+    /*
+    const pages = [
+        {
+            page: "About Us",
+            link: '/about',
+            id: 0
+        },
+        {
+            page: "Contact Us",
+            link: '/contact',
+            id: 1,
+        },
+        {
+            page: "Join Us",
+            link: '/join',
+            id: 2,
+        },
+        {
+            page: "Projects",
+            link: '/projects',
+            id: 3,
+        },
+        {
+            page: "Sponsorships",
+            link: '/sponsorships',
+            id: 4,
+        },
+        {
+            page: "Subteams",
+            link: '/subteams',
+            id: 5
+        },
+    ]
+
+    const pageLink = pages.map(links =>  
+        <li 
+        key={links.id} 
+        onClick= {() => {
+            router.push(links.link);
+        }}
+        className="text-white cursor-pointer"
+        >
+            {links.page}
+        </li>
+    )
+    */
+
+    return(
+        <div className="bg-black h-40 w-full flex items-center">
+
+            <div className="flex min-w-full"> {/* contains two columns, one with mdvfs logo (small) and one with links (large) */}
+
+                <div className="w-2/10 h-full flex items-center justify-center">
+                    {/*<div className="w-30 h-30 bg-amber-400"></div>*/}
+                    <Image unoptimized src={MDVFS_Logo_Stroke} width={140} height={140} alt="mdvfs_logo" className="cursor-pointer" onClick={() => router.push("")}/>
+
+                </div>
+
+                <div className="w-7/10 grid grid-rows-2 items-center"> {/* contains two rows, one for page links and one for social media icons */}
+                    
+                    <div className="columns-6 gap-2.5">
+                        {/*pageLink*/}
+                        <li className="navlink justify-self-end cursor-pointer" onClick={() => router.push("/about")}>About Us</li>
+                        <li className="navlink justify-self-end cursor-pointer" onClick={() => router.push("/contact")}>Contact Us</li>
+                        <li className="navlink justify-self-end cursor-pointer" onClick={() => router.push("/join")}>Join Us</li>
+                        <li className="navlink justify-self-end cursor-pointer" onClick={() => router.push("/projects")}>Projects</li>
+                        <li className="navlink justify-self-end cursor-pointer" onClick={() => router.push("/sponsorships")}>Sponsors</li>
+                        <li className="navlink justify-self-end cursor-pointer" onClick={() => router.push("subteams")}>Subteams</li>
+                    </div>
+                    
+                    <div className="w-full flex justify-end">
+                        <div className="justify-end w-3/10 h-auto grid grid-cols-4 gap-0.25">
+                            <IconContext.Provider value={{ color: "white", size: "2em" }}>
+                                <FaXTwitter className="justify-self-end cursor-pointer"/>
+                            </IconContext.Provider>
+
+                            <IconContext.Provider value={{ color: "white", size: "2em" }}>
+                                <FaInstagram className="justify-self-end cursor-pointer"/>
+                            </IconContext.Provider>
+
+                            <IconContext.Provider value={{ color: "white", size: "2em" }}>
+                                <FaLinkedin className="justify-self-end cursor-pointer"/>
+                            </IconContext.Provider>
+                            
+                            <IconContext.Provider value={{ color: "white", size: "2em" }}>
+                                <FaYoutube className="justify-self-end cursor-pointer"/>
+                            </IconContext.Provider>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div> 
+            
+    )
+}
+
+export default Footer;
