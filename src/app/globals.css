@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -32,8 +34,11 @@ ul{
 li{
   list-style-type:none;
 }
-  
 
+.font-roboto-mono {
+  font-family: 'Roboto Mono', monospace;
+}
+  
 .navlink {
   @apply text-white text-xl
 }
