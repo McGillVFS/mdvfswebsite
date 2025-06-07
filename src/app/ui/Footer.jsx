@@ -5,9 +5,6 @@ import { FaXTwitter, FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa6"
 import { IconContext } from "react-icons";
 import MDVFS_Logo_Stroke from '../../../public/mdvfs_logo_web_stroke.svg'
 
-
-
-
 const Footer = () => {
 
     const router = useRouter()
