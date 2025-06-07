@@ -28,8 +28,8 @@ const NavBar = ({}) => {
             id: 2,
         },
         {
-            page: "Projects",
-            link: '/projects',
+            page: "Initiatives",
+            link: '/initiatives',
             id: 3,
         },
         {
