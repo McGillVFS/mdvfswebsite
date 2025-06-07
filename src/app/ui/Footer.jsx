@@ -1,9 +1,12 @@
 import { useState } from "react"
 import { useRouter } from 'next/navigation'
 import Image from 'next/image'
-import { FaXTwitter, FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa6";
+import { FaXTwitter, FaInstagram, FaLinkedin, FaYoutube, FaEnvelope } from "react-icons/fa6";
 import { IconContext } from "react-icons";
 import MDVFS_Logo_Stroke from '../../../public/mdvfs_logo_web_stroke.svg'
+
+
+
 
 const Footer = () => {
 
@@ -69,18 +72,17 @@ const Footer = () => {
 
                 <div className="w-7/10 grid grid-rows-2 items-center"> {/* contains two rows, one for page links and one for social media icons */}
                     
-                    <div className="columns-6 gap-2.5">
+                    <div className="columns-5 gap-2.5">
                         {/*pageLink*/}
                         <li className="navlink justify-self-end cursor-pointer" onClick={() => router.push("/about")}>About Us</li>
-                        <li className="navlink justify-self-end cursor-pointer" onClick={() => router.push("/contact")}>Contact Us</li>
                         <li className="navlink justify-self-end cursor-pointer" onClick={() => router.push("/join")}>Join Us</li>
-                        <li className="navlink justify-self-end cursor-pointer" onClick={() => router.push("/projects")}>Projects</li>
+                        <li className="navlink justify-self-end cursor-pointer" onClick={() => router.push("/initiatives")}>Initiatives</li>
                         <li className="navlink justify-self-end cursor-pointer" onClick={() => router.push("/sponsorships")}>Sponsors</li>
                         <li className="navlink justify-self-end cursor-pointer" onClick={() => router.push("subteams")}>Subteams</li>
                     </div>
                     
                     <div className="w-full flex justify-end">
-                        <div className="justify-end w-3/10 h-auto grid grid-cols-4 gap-0.25">
+                        <div className="justify-end w-3/10 h-auto grid grid-cols-5 gap-0.25">
                             <IconContext.Provider value={{ color: "white", size: "2em" }}>
                                 <FaXTwitter className="justify-self-end cursor-pointer"/>
                             </IconContext.Provider>
@@ -96,6 +98,11 @@ const Footer = () => {
                             <IconContext.Provider value={{ color: "white", size: "2em" }}>
                                 <FaYoutube className="justify-self-end cursor-pointer"/>
                             </IconContext.Provider>
+
+                            <IconContext.Provider value={{ color: "white", size: "2em" }}>
+                                <FaEnvelope className="justify-self-end cursor-pointer"/>
+                            </IconContext.Provider>
+
                         </div>
                     </div>
 

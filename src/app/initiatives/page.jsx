@@ -5,11 +5,11 @@ import { useRouter } from 'next/navigation'
 import Title from "../ui/Title"
 
 
-export default function Contact() {
+export default function Projects() {
     
     return (
         <div>
-            <Title text={"Contact Us"}/>
+            <Title text={"Our Initiatives"}/>
         </div>
     )
 

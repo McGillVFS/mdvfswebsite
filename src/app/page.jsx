@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import { useRouter } from 'next/navigation'
+import Navbar from "./ui/Navbar"
 import Footer from "./ui/Footer"
 
 
@@ -9,6 +10,7 @@ export default function Home() {
     
     return (
         <div>
+            
         </div>
     )
 

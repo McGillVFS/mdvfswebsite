@@ -1,6 +1,7 @@
 "use client"
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import Navbar from "./ui/Navbar"
 import Footer from "./ui/Footer"
 import "./globals.css";
 
@@ -26,6 +27,7 @@ export default function RootLayout({children,}: Readonly<{children: React.ReactN
   return (
     <html lang="en">
       <body>
+        <Navbar />
         {children}
         <Footer />
       </body>
