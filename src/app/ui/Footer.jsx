@@ -74,11 +74,11 @@ const Footer = () => {
                     
                     <div className="columns-5 gap-2.5">
                         {/*pageLink*/}
-                        <li className="navlink justify-self-end cursor-pointer" onClick={() => router.push("/about")}>About Us</li>
-                        <li className="navlink justify-self-end cursor-pointer" onClick={() => router.push("/join")}>Join Us</li>
-                        <li className="navlink justify-self-end cursor-pointer" onClick={() => router.push("/initiatives")}>Initiatives</li>
-                        <li className="navlink justify-self-end cursor-pointer" onClick={() => router.push("/sponsorships")}>Sponsors</li>
-                        <li className="navlink justify-self-end cursor-pointer" onClick={() => router.push("subteams")}>Subteams</li>
+                        <li className="navlink justify-self-end cursor-pointer" onClick={() => router.push("/about")}>ABOUT US</li>
+                        <li className="navlink justify-self-end cursor-pointer" onClick={() => router.push("/join")}>JOIN US</li>
+                        <li className="navlink justify-self-end cursor-pointer" onClick={() => router.push("/initiatives")}>INITIATIVES</li>
+                        <li className="navlink justify-self-end cursor-pointer" onClick={() => router.push("/sponsorships")}>SPONSORS</li>
+                        <li className="navlink justify-self-end cursor-pointer" onClick={() => router.push("subteams")}>SUBTEAMS</li>
                     </div>
                     
                     <div className="w-full flex justify-end">
