@@ -4,6 +4,7 @@ import { useState } from "react"
 import { useRouter } from 'next/navigation'
 import Title from "../ui/Title"
 import InfoCard from "../ui/InfoCard"
+import SubHeading from "../ui/SubHeading"
 import { LuUsersRound } from "react-icons/lu";
 import { LuMonitor } from "react-icons/lu";
 import { LuWrench } from "react-icons/lu";
@@ -44,9 +45,18 @@ export default function Join() {
                 className="px-3"
                 />
 
-                
-                
             </div>
+
+            <SubHeading text={"Application Form"} />
+
+            <div className="px-4">
+                <p className="text-gray-500 text-lg pb-3">Join the newest and fastest growing design team at McGill!.</p>
+            </div>
+
+            <div className="flex items-center justify-center py-8">
+                <button className="bg-red-500 hover:bg-red-600 text-white font-bold px-4 rounded-xl h-14 min-w-11/12">Apply Now!</button>
+            </div>
+
         </div>
     )
 
