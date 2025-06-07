@@ -1,6 +1,7 @@
 @import "tailwindcss";
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap'); /* Roboto Mono - Used for headings */
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap'); /* Tajawal - Used for body text */
 
 :root {
   --background: #ffffff;
@@ -38,6 +39,10 @@ li{
 
 .font-roboto-mono {
   font-family: 'Roboto Mono', monospace;
+}
+
+.font-tajawal {
+  font-family: 'Tajawal', sans-serif;
 }
   
 .navlink {
