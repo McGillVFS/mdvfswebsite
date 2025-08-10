@@ -44,6 +44,10 @@ li{
 .font-tajawal {
   font-family: 'Tajawal', sans-serif;
 }
+
+.font-inter> {
+  font-family: 'Inter', sans-serif; 
+}
   
 .navlink {
   @apply text-white text-xl
