@@ -48,3 +48,43 @@ li{
 .navlink {
   @apply text-white text-xl
 }
+
+/* temporary css for timeline */
+.slider-container {
+  padding: 40px 0;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.slick-slide {
+  padding: 0 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  box-sizing: border-box;
+}
+
+.slick-slide > div {
+  background: white;
+  border-radius: 6px;
+  padding: 30px 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);  /* subtle border instead of shadow */
+  color: black;
+  min-height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  opacity: 0.5;
+}
+
+.slick-center > div {
+  transform: scale(1.2);
+  opacity: 1;
+  border: 2px solid black;  /* thicker/darker border for focused slide */
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}

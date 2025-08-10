@@ -56,7 +56,7 @@ export default function Join() {
             <div className="flex items-center justify-center py-12">
                 <button className="bg-red-500 hover:bg-red-600 text-white font-bold px-4 rounded-xl h-14 min-w-11/12">Apply Now!</button>
             </div>
-
+            
         </div>
     )
 
