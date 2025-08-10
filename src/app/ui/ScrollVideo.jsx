@@ -6,7 +6,7 @@ import { useScroll } from "framer-motion";
 const FRAME_COUNT = 300;
 const frameSrc = (i) => `/images/drone_video/${i}.webp`;
 
-export default function ScrollVideo() {
+export default function ScrollVideo({ overlay }) {
   const wrapperRef = useRef(null);
   const canvasRef = useRef(null);
   const { scrollYProgress } = useScroll({
@@ -78,6 +78,11 @@ export default function ScrollVideo() {
           ref={canvasRef}
           className="w-full h-[1000px]"
         />
+        <div className="absolute inset-0 z-10 flex items-center justify-center pointer-events-none">
+            <p className="text-white text-9xl font-semibold text-center drop-shadow">
+              {overlay}
+            </p>
+        </div>
       </div>
     </div>
   );
