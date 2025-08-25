@@ -63,7 +63,7 @@ export default function Sponsorships() {
 
             <SubHeading text={"Sponsorship Packages"} />
 
-            <div className="grid grid-cols-4 gap-3 p-4">
+            <div className="grid grid-cols-1 sm:grid-cols-4 gap-3 p-4">
                 <SponsorshipCard 
                     tier={"Gold"}
                     price={"$999+"}
