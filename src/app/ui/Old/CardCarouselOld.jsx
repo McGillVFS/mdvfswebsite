@@ -1,5 +1,5 @@
 import { useState } from "react"
-import ImgCard from "./ImgCard";
+import ImgCard from "../ImgCard";
 
 const CardCarousel = ({ CardObj }) => {
 

@@ -11,10 +11,23 @@ import Timeline from "./ui/Timeline"
 
 export default function Home() {
 
-     const [isOpen, setIsOpen] = useState(false);
-     const [modelPath, setModelPath] = useState("");
+    const [isOpen, setIsOpen] = useState(false);
+    const [modelPath, setModelPath] = useState("");
+
+    const timelineItems = [
+        {
+        year: "2024-2025",
+        img: "/drone_timeline/imgs/2024-2025.webp",
+        model: "/drone_timeline/models/2024-2025.glb",
+        },
+        {
+        year: "2025-2026",
+        img: "/drone_timeline/imgs/2025-2026.webp",
+        model: "/drone_timeline/models/2025-2026.glb",
+        }
+    ];
     
-     return (
+    return (
         <div>
             <ScrollVideo overlay="McGill Drones and Vertical Flight Society" />
 
@@ -25,7 +38,7 @@ export default function Home() {
 
             <div className="bg-black h-120">
                 <div className="w-48 h-48 bg-blue-500" onClick={() => setIsOpen(true)} />
-                <Timeline setIsOpen={setIsOpen} setModelPath={setModelPath} />
+                <Timeline timelineItems={timelineItems} setIsOpen={setIsOpen} setModelPath={setModelPath} />
             </div>
 
             <div>

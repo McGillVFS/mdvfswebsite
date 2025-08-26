@@ -21,7 +21,7 @@ const NextArrow = ({ className, style, onClick }) => (
   />
 );
 
-const Timeline = ({setIsOpen, setModelPath}) => {
+const Timeline = ({setIsOpen, setModelPath, timelineItems}) => {
 
   const settings = {
     className: "center",
@@ -34,25 +34,13 @@ const Timeline = ({setIsOpen, setModelPath}) => {
     nextArrow: <NextArrow />
   };
 
-  const timelineItems = [
-    {
-      year: "2024-2025",
-      img: "/drone_timeline/imgs/2024-2025.webp",
-      model: "/drone_timeline/models/2024-2025.glb",
-    },
-    {
-      year: "2025-2026",
-      img: "/drone_timeline/models/2025-2026.webp",
-      model: "/drone_timeline/models/2025-2026.glb",
-    },
 
-  ];
 
 
   return (
     <div className="slider-container">
       <Slider {...settings}>
-        {timelineItems.map((item, index) => (
+       {timelineItems.map((item, index) => (
           <div className="flex justify-center" key={index} 
             onClick={() => {
                 setModelPath(item.model)  
@@ -60,7 +48,7 @@ const Timeline = ({setIsOpen, setModelPath}) => {
               }  
             }>
             <img src={item.img} alt={`Model for ${item.year}`} className="w-48 h-48" />
-            <h3>{item.year}</h3>
+            <h3>{item. year}</h3>
           </div>
         ))}
       </Slider>
