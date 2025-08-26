@@ -25,7 +25,7 @@ export default function Home() {
 
             <div className="bg-black h-120">
                 <div className="w-48 h-48 bg-blue-500" onClick={() => setIsOpen(true)} />
-                <Timeline />
+                <Timeline setIsOpen={setIsOpen} setModelPath={setModelPath} />
             </div>
 
             <div>
@@ -59,6 +59,8 @@ export default function Home() {
             {isOpen && (
                 <ThreeDModelPopup model_path={modelPath} setIsOpen={setIsOpen} />
             )}
+
+            
 
         </div>
     )
