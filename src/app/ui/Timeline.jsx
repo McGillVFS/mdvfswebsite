@@ -21,7 +21,7 @@ const NextArrow = ({ className, style, onClick }) => (
   />
 );
 
-const Timeline = ({}) => {
+const Timeline = ({setModelPath, timelineItems}) => {
 
   const settings = {
     className: "center",
@@ -34,14 +34,8 @@ const Timeline = ({}) => {
     nextArrow: <NextArrow />
   };
 
-  const timelineItems = [
-    "2015: Built a drone",
-    "2016: Built another drone",
-    "2017: Built yet another drone",
-    "2018: Built yet another drone",
-    "2019: Didn't build a drone (ran out of time)",
-    "2020: Didn't do anything because of COVID",
-  ];
+  
+  
 
   return (
     <div className="slider-container">

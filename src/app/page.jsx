@@ -12,6 +12,15 @@ import Timeline from "./ui/Timeline"
 export default function Home() {
 
      const [isOpen, setIsOpen] = useState(false);
+     const [modelPath, setModelPath] = useState("");
+     const timelineItems = [
+         "2015: Built a drone",
+         "2016: Built another drone",
+         "2017: Built yet another drone",
+         "2018: Built yet another drone",
+         "2019: Didn't build a drone (ran out of time)",
+         "2020: Didn't do anything because of COVID",
+     ];
     
      return (
         <div>
@@ -24,7 +33,7 @@ export default function Home() {
 
             <div className="bg-black h-120">
                 <div className="w-48 h-48 bg-blue-500" onClick={() => setIsOpen(true)} />
-                <Timeline />
+                <Timeline setModelPath={setModelPath} timelineItems={timelineItems} />
             </div>
 
             <div>
