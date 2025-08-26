@@ -34,9 +34,6 @@ const Timeline = ({setIsOpen, setModelPath, timelineItems}) => {
     nextArrow: <NextArrow />
   };
 
-
-
-
   return (
     <div className="slider-container">
       <Slider {...settings}>
@@ -48,7 +45,7 @@ const Timeline = ({setIsOpen, setModelPath, timelineItems}) => {
               }  
             }>
             <img src={item.img} alt={`Model for ${item.year}`} className="w-48 h-48" />
-            <h3>{item. year}</h3>
+            <h3>{item.year}</h3>
           </div>
         ))}
       </Slider>

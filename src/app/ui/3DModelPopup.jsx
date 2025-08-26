@@ -15,7 +15,7 @@ const ThreeDModelPopup = ({ model_path, setIsOpen }) => {
                 <div>
                     <button onClick={() => setIsOpen(false)}> <IoMdClose className="text-white size-8 float-left" /></button>
                     <ModelViewer
-                        src="/models/comic_drone.glb"
+                        src={model_path}
                         alt="3D model"
                         camera-controls
                         auto-rotate
