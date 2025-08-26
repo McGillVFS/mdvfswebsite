@@ -11,7 +11,7 @@ const CardCarousel = ({ CardObj }) => {
                         <ImgCard 
                             key={CardInfo.index}
                             ImgSrc={CardInfo.source} 
-                            setIsOpen={CardInfo.setIsOpen}
+                            PageRoute={CardInfo.route}
                             Text={CardInfo.text}
                         />
                     )
