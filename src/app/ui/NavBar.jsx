@@ -72,7 +72,7 @@ const NavBar = ({}) => {
 
             {/* Overlay */}
             {isOpen && (
-                <div className="fixed inset-0 bg-transparent z-30" onclick={() => setIsOpen(false)} />
+                <div className="fixed inset-0 bg-transparent z-30" onClick={() => setIsOpen(false)} />
             )}
 
             {/* Sidenav */}
