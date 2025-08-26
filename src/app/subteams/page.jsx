@@ -4,11 +4,12 @@ import { useState } from "react"
 import { useRouter } from 'next/navigation'
 import Title from "../ui/Title"
 import ImgCard from "../ui/ImgCard";
-import InfoPopup from "../ui/InfoPopup"
+import Popup from "../ui/Popup"
 
 export default function Subteams() {
     
     const [isOpen, setIsOpen] = useState(false);
+    const [content, setContent] = useState("");
     
     return (
         <div>
@@ -21,7 +22,7 @@ export default function Subteams() {
             />
 
             {isOpen && (
-                <InfoPopup text="Hello!" setIsOpen={setIsOpen} />
+                <Popup text="Hello!" setIsOpen={setIsOpen} />
             )}
         </div>
     )

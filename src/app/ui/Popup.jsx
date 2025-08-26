@@ -4,7 +4,7 @@ import { IoMdClose } from "react-icons/io";
 
 
 
-const InfoPopup = ({ text, setIsOpen }) => {
+const Popup = ({ setIsOpen, setContent, children }) => {
     
 
     return(
@@ -14,7 +14,8 @@ const InfoPopup = ({ text, setIsOpen }) => {
                     <button onClick={() => setIsOpen(false)}> <IoMdClose className="text-white size-8 float-left" /></button>
                     <div className="flex justify-center items-center">
                         <div className="p-10">
-                            <p className="text-white font-tajawal text-base">{text}</p>
+                            {/*<p className="text-white font-tajawal text-base">{text}</p>*/}
+                            {children}
                         </div>
                     </div>
                 </div>
@@ -23,4 +24,4 @@ const InfoPopup = ({ text, setIsOpen }) => {
     )
 }
 
-export default InfoPopup;
+export default Popup;

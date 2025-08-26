@@ -2,11 +2,14 @@ import { useState } from "react";
 import { useRouter } from 'next/navigation'
 import Image from 'next/image'
 
-const ImgCard = ( { Index, ImgSrc, setIsOpen, Text }) => {
+const ImgCard = ( { Index, ImgSrc, setIsOpen, Text, content, setContent }) => {
     const router = useRouter();
 
     return(
-        <div className="w-lg h-175 relative overflow-hidden rounded-lg group" onClick={() => setIsOpen(true)} >
+        <div className="w-lg h-175 relative overflow-hidden rounded-lg group" onClick={() => {
+                setContent(content)
+                setIsOpen(true)
+            }} >
             <img 
                 src={ImgSrc} 
                 className="object-cover w-full h-full"

@@ -45,7 +45,7 @@ const Timeline = ({setIsOpen, setModelPath, timelineItems}) => {
               }  
             }>
             <img src={item.img} alt={`Model for ${item.year}`} className="w-48 h-48" />
-            <h3>{item.year}</h3>
+            <h3 className="text-white font-tajawal font-light text-base">{item.year}</h3>
           </div>
         ))}
       </Slider>
