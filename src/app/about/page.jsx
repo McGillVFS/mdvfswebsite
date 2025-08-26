@@ -145,7 +145,24 @@ export default function About() {
         />
       </div>
       <SubHeading text={"AWARDS AND ACHIEVEMENTS"} />
+
+      <div className = "pl-1">
+        <p className="font-tajawal text-black-500 text-xl p-3">2023: Design-Build-Vertical Flight Student Competition - 3rd Place</p>
+        <p className="font-tajawal text-black-500 text-xl p-3">2024: Vertical Flight Society - Lichten Award Winner</p>
+        <p className="font-tajawal text-black-500 text-xl p-3">2024: Aerial Evolution Association of Canada - 8th Place</p>
+        <p className="font-tajawal text-black-500 text-xl p-3">2025: Aerial Evolution Association of Canada - 2nd Place (Bidder’s Presentation)</p>
+        <p className="font-tajawal text-black-500 text-xl p-3">2025: Design-Build-Vertical Flight Student Competition - Perseverance Award</p>
+      </div>
+
       <SubHeading text={"KEY DATES"} />
+
+      <div className = "pl-1 pb-2">
+        <p className="font-tajawal text-black-500 text-xl p-3">2021: Vertical Flight Society at McGill Founded</p>
+        <p className="font-tajawal text-black-500 text-xl p-3">2023: Recognition on the International Stage at the DBVF Competition</p>
+        <p className="font-tajawal text-black-500 text-xl p-3">2023: Rebrand to McGill Drones and Vertical Flight Society</p>
+        <p className="font-tajawal text-black-500 text-xl p-3">2025: Rebrand to McGill Aerial Drones</p>
+      </div>
+
     </div>
   );
 }
