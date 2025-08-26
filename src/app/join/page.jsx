@@ -15,7 +15,7 @@ export default function Join() {
     
     return (
         <div>
-            <Title text={"Join Us"}/>
+            <Title text={"JOIN US"}/>
 
             <div className="grid grid-cols-2 gap-5 p-4">
 

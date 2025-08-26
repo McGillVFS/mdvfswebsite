@@ -26,8 +26,8 @@ const NavBar = ({}) => {
             id: 2
         },
         {
-            page: "Initiatives",
-            link: '/initiatives',
+            page: "Research",
+            link: '/research',
             id: 3
         },
         {
@@ -71,7 +71,9 @@ const NavBar = ({}) => {
 
 
             {/* Overlay */}
-            
+            {isOpen && (
+                <div className="fixed inset-0 bg-transparent z-30" onclick={() => setIsOpen(false)} />
+            )}
 
             {/* Sidenav */}
             <div className={`fixed top-0 right-0 h-full w-70 bg-neutral-800/90 text-white transform transition-transform duration-300 ease-in-out z-40 ${isOpen ? 'translate-x-0' : 'translate-x-full'} z-40`}>
