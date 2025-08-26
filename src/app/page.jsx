@@ -12,6 +12,7 @@ import Timeline from "./ui/Timeline"
 export default function Home() {
 
      const [isOpen, setIsOpen] = useState(false);
+     const [modelPath, setModelPath] = useState("");
     
      return (
         <div>
@@ -56,7 +57,7 @@ export default function Home() {
 
             
             {isOpen && (
-                <ThreeDModelPopup model_path={"/models/comic_drone.glb"} setIsOpen={setIsOpen} />
+                <ThreeDModelPopup model_path={modelPath} setIsOpen={setIsOpen} />
             )}
 
         </div>
