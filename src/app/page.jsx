@@ -6,6 +6,7 @@ import Navbar from "./ui/Navbar"
 import Footer from "./ui/Footer"
 import ScrollVideo from "./ui/ScrollVideo"
 import ThreeDModelPopup from "./ui/3DModelPopup"
+import Timeline from "./ui/Timeline"
 
 
 export default function Home() {
@@ -21,8 +22,9 @@ export default function Home() {
                
             </div>
 
-            <div className="bg-black h-90">
+            <div className="bg-black h-120">
                 <div className="w-48 h-48 bg-blue-500" onClick={() => setIsOpen(true)} />
+                <Timeline />
             </div>
 
             <div>

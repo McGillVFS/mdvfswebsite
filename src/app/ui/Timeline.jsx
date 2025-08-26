@@ -8,7 +8,7 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa"; //use react-icon
 const PrevArrow = ({ className, style, onClick }) => (
   <FaChevronLeft
     className={className}
-    style={{ ...style, display: "block", color: "black", fontSize: 24 }}
+    style={{ ...style, display: "block", color: "white", fontSize: 24 }}
     onClick={onClick}
   />
 );
@@ -16,7 +16,7 @@ const PrevArrow = ({ className, style, onClick }) => (
 const NextArrow = ({ className, style, onClick }) => (
   <FaChevronRight
     className={className}
-    style={{ ...style, display: "block", color: "black", fontSize: 24 }}
+    style={{ ...style, display: "block", color: "white", fontSize: 24 }}
     onClick={onClick}
   />
 );
@@ -40,7 +40,7 @@ const Timeline = ({}) => {
     "2017: Built yet another drone",
     "2018: Built yet another drone",
     "2019: Didn't build a drone (ran out of time)",
-    "2020: Didn't do anything because of COIVD",
+    "2020: Didn't do anything because of COVID",
   ];
 
   return (

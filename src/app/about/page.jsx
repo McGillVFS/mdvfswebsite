@@ -15,7 +15,15 @@ export default function About() {
 
       <div className="md:flex items-center justify-center mx-3">
         <p className="font-tajawal text-black-500 text-xl p-8">
-          McGill Aerial Design (MAD) is a student-led design team of over 130 members dedicated to advancing aerial and vertical flight technologies at McGill University. Founded in 2021 and officially recognized by the Engineering Undergraduate Society, MAD has grown rapidly, doubling in size year after year as one of McGill’s newest and fastest-growing design teams. We strive to bridge the gap between industry and academia while inspiring the next generation for aerospace engineers and innovators by providing hands-on experience in aerial systems design, research, and competition. 
+          McGill Aerial Design (MAD) is a student-led design team of over 130
+          members dedicated to advancing aerial and vertical flight technologies
+          at McGill University. Founded in 2021 and officially recognized by the
+          Engineering Undergraduate Society, MAD has grown rapidly, doubling in
+          size year after year as one of McGill’s newest and fastest-growing
+          design teams. We strive to bridge the gap between industry and
+          academia while inspiring the next generation for aerospace engineers
+          and innovators by providing hands-on experience in aerial systems
+          design, research, and competition.
         </p>
         <img
           className="m-8 w-100 rounded-lg border-2 border-black"
@@ -29,45 +37,112 @@ export default function About() {
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-y-0 gap-x-2">
         <ProfileCard
           imageUrl={"/images/profile_placeholder.jpg"}
-          name={"Elliot Markovich"}
-          title={"Lead Source Designer"}
+          name={"Alex Lyakishev"}
+          program={"Mechanical Engineering"}
+          title={"Co-Captain"}
+        />
+        <ProfileCard
+          imageUrl={"/images/profile_placeholder.jpg"}
+          name={"Ana Oyharcabal"}
+          program={"Honours Physics"}
+          title={"Co-Captain"}
+        />
+        <ProfileCard
+          imageUrl={"/images/profile_placeholder.jpg"}
+          name={"Romain Tarayre"}
+          title={"Avionics Lead"}
+        />
+        <ProfileCard
+          imageUrl={"/images/profile_placeholder.jpg"}
+          name={"Jiwoong Choi"}
+          title={"Avionics Lead"}
+        />
+        <ProfileCard
+          imageUrl={"/images/profile_placeholder.jpg"}
+          name={"Alexander Kudinov"}
+          program={"Software Engineering Coop"}
+          title={"Avionics Lead"}
         />
         <ProfileCard
           imageUrl={"/images/profile_placeholder.jpg"}
           name={"Elliot Markovich"}
-          title={"Lead Source Designer"}
+          title={"Avionics Lead"}
         />
         <ProfileCard
           imageUrl={"/images/profile_placeholder.jpg"}
-          name={"Elliot Markovich"}
-          title={"Lead Source Designer"}
+          name={"Amaia Pelletier"}
+          title={"Avionics Lead"}
         />
         <ProfileCard
           imageUrl={"/images/profile_placeholder.jpg"}
-          name={"Elliot Markovich"}
-          title={"Lead Source Designer"}
+          name={"Junho Jun"}
+          title={"Aerostructures Lead"}
         />
         <ProfileCard
           imageUrl={"/images/profile_placeholder.jpg"}
-          name={"Elliot Markovich"}
-          title={"Lead Source Designer"}
+          name={"Emma Lyon"}
+          title={"Aerostructures Lead"}
         />
         <ProfileCard
           imageUrl={"/images/profile_placeholder.jpg"}
-          name={"Elliot Markovich"}
-          title={"Lead Source Designer"}
+          name={"Max Newman"}
+          title={"Aerostructures Lead"}
         />
         <ProfileCard
           imageUrl={"/images/profile_placeholder.jpg"}
-          name={"Elliot Markovich"}
-          title={"Lead Source Designer"}
+          name={"Ernest Lee"}
+          title={"Aerostructures Lead"}
         />
         <ProfileCard
           imageUrl={"/images/profile_placeholder.jpg"}
-          name={"Elliot Markovich"}
-          title={"Lead Source Designer"}
+          name={"Will Kalish"}
+          porgram={"Honours Physics"}
+          title={"Power Lead"}
         />
-    
+        <ProfileCard
+          imageUrl={"/images/profile_placeholder.jpg"}
+          name={"Muntasir Zaman"}
+          title={"Power Lead"}
+        />
+        <ProfileCard
+          imageUrl={"/images/profile_placeholder.jpg"}
+          name={"Vidush Komarraju"}
+          title={"Power Lead"}
+        />
+        <ProfileCard
+          imageUrl={"/images/profile_placeholder.jpg"}
+          name={"Dany Malaeb"}
+          title={"Power Lead"}
+        />
+        <ProfileCard
+          imageUrl={"/images/profile_placeholder.jpg"}
+          name={"Logan Innes"}
+          title={"VP Finance"}
+        />
+        <ProfileCard
+          imageUrl={"/images/profile_placeholder.jpg"}
+          name={"Scarbo Chan"}
+          program={"Honours Quantitative Biology"}
+          title={"Management Director"}
+        />
+        <ProfileCard
+          imageUrl={"/images/profile_placeholder.jpg"}
+          name={"Amy Wang"}
+          program={"Honours Quantitative Biology"}
+          title={"VP Communications"}
+        />
+        <ProfileCard
+          imageUrl={"/images/profile_placeholder.jpg"}
+          name={"David Bard"}
+          program={"Honours Computer Science"}
+          title={"VP Website"}
+        />
+        <ProfileCard
+          imageUrl={"/images/profile_placeholder.jpg"}
+          name={"Edwin Kim"}
+          program={"Honours Computer Science"}
+          title={"VP Website"}
+        />
       </div>
       <SubHeading text={"AWARDS AND ACHIEVEMENTS"} />
       <SubHeading text={"KEY DATES"} />

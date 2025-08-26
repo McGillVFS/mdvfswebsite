@@ -11,29 +11,34 @@ const NavBar = ({}) => {
 
     const pages = [
         {
+            page: "Home",
+            link: '/',
+            id: 0
+        },
+        {
             page: "About Us",
             link: '/about',
-            id: 0
+            id: 1
         },
         {
             page: "Join Us",
             link: '/join',
-            id: 1
+            id: 2
         },
         {
             page: "Initiatives",
             link: '/initiatives',
-            id: 2
+            id: 3
         },
         {
             page: "Sponsorships",
             link: '/sponsorships',
-            id: 3
+            id: 4
         },
         {
             page: "Subteams",
             link: '/subteams',
-            id: 4
+            id: 5
         }
     ]
 
@@ -50,7 +55,7 @@ const NavBar = ({}) => {
     };
 
     //Set hamburger menu color depending on page
-    const hamColor = pathname === "/about" ? "text-white" : "text-black"; //change to proper page later
+    const hamColor = pathname === "/" ? "text-white" : "text-black"; //change to proper page later
 
     return(
         <div className = "relative">
@@ -69,7 +74,7 @@ const NavBar = ({}) => {
             
 
             {/* Sidenav */}
-            <div className={`fixed top-0 right-0 h-full w-80 bg-neutral-800/90 text-white transform transition-transform duration-300 ease-in-out z-40 ${isOpen ? 'translate-x-0' : 'translate-x-full'} z-40`}>
+            <div className={`fixed top-0 right-0 h-full w-70 bg-neutral-800/90 text-white transform transition-transform duration-300 ease-in-out z-40 ${isOpen ? 'translate-x-0' : 'translate-x-full'} z-40`}>
                 <div className="float-right h-full w-14 bg-red-600"></div>
                 <div className="p-6 pt-16">
                     <nav>

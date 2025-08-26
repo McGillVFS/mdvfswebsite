@@ -53,7 +53,7 @@ export default function Join() {
                 <p className="text-gray-500 text-lg font-tajawal pb-1">Join the newest and fastest growing design team at McGill!</p>
             </div>
 
-            <div className="flex items-center justify-center py-12">
+            <div className="flex items-center justify-center py-8">
                 <button className="bg-red-500 hover:bg-red-600 text-white font-bold px-4 rounded-xl h-14 min-w-11/12">Apply Now!</button>
             </div>
             
