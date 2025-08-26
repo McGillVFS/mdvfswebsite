@@ -36,19 +36,19 @@ export default function About() {
 
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-y-0 gap-x-2">
         <ProfileCard
-          imageUrl={"/images/profile_placeholder.jpg"}
+          imageUrl={"/images/profile_images/Alex.png"}
           name={"Alex Lyakishev"}
           program={"Mechanical Engineering"}
           title={"Co-Captain"}
         />
         <ProfileCard
-          imageUrl={"/images/profile_placeholder.jpg"}
+          imageUrl={"/images/profile_images/Ana.png"}
           name={"Ana Oyharcabal"}
           program={"Honours Physics"}
           title={"Co-Captain"}
         />
         <ProfileCard
-          imageUrl={"/images/profile_placeholder.jpg"}
+          imageUrl={"/images/profile_images/Romain.png"}
           name={"Romain Tarayre"}
           title={"Avionics Lead"}
         />
