@@ -22,20 +22,42 @@ export default function Projects() {
             abstract={"This project presents a drone-mounted cleaning mechanism designed to replace manual labor in hazardous or hard-to-reach environments such as high-rise windows, rooftops, and solar panel fields. At the core of the system is a custom-designed, 3D-printed PETG container that mounts securely onto any weight-bearing drone. The container features an internal separation that creates two compartments: a larger reservoir for water and a smaller one for cleaning solution. Two diaphragm pumps, controlled by an Arduino microcontroller, manage the delivery of each liquid. An external electronics box, safely mounted beneath the container, encloses all necessary circuitry and control components. Flexible silicone tubing connects the base of each compartment to a Tee-connector, which channels the fluids to an industrial-grade flat spray nozzle. The system is lightweight, durable, and optimized for aerial stability and efficiency. By integrating compact mechanical and electronic systems, this cleaning mechanism enables drones to perform targeted spray cleaning with precision and minimal human intervention. The result is a safer, more cost-effective, and scalable solution for cleaning applications in environments that are typically dangerous, labor-intensive, or inaccessible by conventional means."}
         />
     )
+
+    const researchPopupTwo = (
+        <ResearchPopup 
+            year={"2024-2025"}
+            type={"Capstone"}
+            subject={"Wind Sensor"}
+            presented_by={"Lorem, Ipsum"}
+            advised_by={"Dr. Lorem Ipsum"}
+            abstract={"Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum."}
+        />
+    )
     
     return (
         <div>
             <Title text={"RESEARCH"}/>
 
             <SubHeading text={"OUR PROJECTS"} />
-            <ImgCard 
-                Index={0}
-                ImgSrc={'GnUGASHa0AA8fNW.jpeg'}
-                setIsOpen={setIsOpen}
-                Text={'Hello!'}
-                setContent={setResearchPopup}
-                content={researchPopupOne}
-            />
+
+            <div className="flex overflow-x-auto">
+                <ImgCard 
+                    Index={0}
+                    ImgSrc={'GnUGASHa0AA8fNW.jpeg'}
+                    setIsOpen={setIsOpen}
+                    Text={'Multi-Surface Cleaning Attachment'}
+                    setContent={setResearchPopup}
+                    content={researchPopupOne}
+                />
+                <ImgCard 
+                    Index={0}
+                    ImgSrc={'GnUGASHa0AA8fNW.jpeg'}
+                    setIsOpen={setIsOpen}
+                    Text={'Wind Sensor'}
+                    setContent={setResearchPopup}
+                    content={researchPopupTwo}
+                />
+            </div>
 
             {isOpen && (
                 <Popup setIsOpen={setIsOpen}>

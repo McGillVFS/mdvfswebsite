@@ -76,7 +76,7 @@ const Footer = () => {
                         {/*pageLink*/}
                         <li className="navlink justify-self-end cursor-pointer" onClick={() => router.push("/about")}>ABOUT US</li>
                         <li className="navlink justify-self-end cursor-pointer" onClick={() => router.push("/join")}>JOIN US</li>
-                        <li className="navlink justify-self-end cursor-pointer" onClick={() => router.push("/initiatives")}>INITIATIVES</li>
+                        <li className="navlink justify-self-end cursor-pointer" onClick={() => router.push("/research")}>RESEARCH</li>
                         <li className="navlink justify-self-end cursor-pointer" onClick={() => router.push("/sponsorships")}>SPONSORS</li>
                         <li className="navlink justify-self-end cursor-pointer" onClick={() => router.push("subteams")}>SUBTEAMS</li>
                     </div>
