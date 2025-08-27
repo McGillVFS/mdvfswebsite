@@ -30,6 +30,9 @@ const Timeline = ({setIsOpen, setModelPath, timelineItems}) => {
     centerPadding: "60px",
     slidesToShow: 3,
     speed: 500,
+    autoplay: true,     
+    autoplaySpeed: 3000,
+    pauseOnHover: true,
     prevArrow: <PrevArrow />,
     nextArrow: <NextArrow />
   };
@@ -44,8 +47,8 @@ const Timeline = ({setIsOpen, setModelPath, timelineItems}) => {
                 setIsOpen(true)
               }  
             }>
-            <img src={item.img} alt={`Model for ${item.year}`} className="w-48 h-48" />
-            <h3 className="text-white font-tajawal font-light text-base">{item.year}</h3>
+            <img src={item.img} alt={`Model for ${item.year}`} className="w-64 h-48" />
+            <h3 className="text-white font-tajawal font-light text-base pr-8">{item.year}</h3>
           </div>
         ))}
       </Slider>

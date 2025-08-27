@@ -46,12 +46,12 @@ export default function Home() {
         <div>
             <ScrollVideo overlay="McGill Drones and Vertical Flight Society" />
 
-            <div className='bg-black'>
-                <p className="text-red-500 font-inter font-extrabold text-[200px] pl-5">Our Work</p>
+            <div className='bg-black h-60'>
+                <p className="text-red-500 font-inter font-extrabold text-[200px] pl-5" data-aos="fade-up">Our Work</p>
                
             </div>
 
-            <div className="bg-black h-120">
+            <div className="bg-black h-100">
                 {/*
                 <div className="w-48 h-48 bg-blue-500" onClick={() => {
                     setModelPath("/drone_timeline/models/2024-2025.glb")
@@ -66,23 +66,23 @@ export default function Home() {
             </div>
 
             <div className="bg-black flex justify-center items-center">
-                <p className = "text-white font-inter font-regular text-[70px] p-5">AMBITION. DISCOVERY.</p>
+                <p className = "text-white font-inter font-regular text-[70px] p-5" data-aos="fade-up">AMBITION. DISCOVERY.</p>
             </div>
 
             <div className="bg-gradient-to-b from-black to-red-600 flex flex-col justify-end">
                 <div className="h-72"></div>
 
                 <div className="flex"> 
-                    <p className="text-white font-inter font-extrabold text-[200px] -tracking-wider leading-35 p-12">
+                    <p className="text-white font-inter font-extrabold text-[200px] -tracking-wider leading-35 p-12" data-aos="fade-down">
                         Follow<br />us.
                     </p>
                 
                     <div className="flex w-full items-end justify-end">   
                         <div className="flex columns-4 items-end p-10 space-x-6">
-                            <div className = "size-42 rounded-full bg-blue-400 border-2 border-white" onClick={() => {}} />
-                            <div className = "size-42 rounded-full bg-blue-400 border-2 border-white" onClick={() => {}} />
-                            <div className = "size-42 rounded-full bg-blue-400 border-2 border-white" onClick={() => {}} />
-                            <div className = "size-42 rounded-full bg-blue-400 border-2 border-white" onClick={() => {}} />
+                            <div className = "size-40 rounded-full bg-blue-400 border-2 border-white" data-aos="fade-down" data-aos-delay="300" onClick={() => {}} />
+                            <div className = "size-40 rounded-full bg-blue-400 border-2 border-white" data-aos="fade-down" data-aos-delay="450" onClick={() => {}} />
+                            <div className = "size-40 rounded-full bg-blue-400 border-2 border-white" data-aos="fade-down" data-aos-delay="600" onClick={() => {}} />
+                            <div className = "size-40 rounded-full bg-blue-400 border-2 border-white" data-aos="fade-down" data-aos-delay="750" onClick={() => {}} />
                         </div>
                     </div>
                 </div>

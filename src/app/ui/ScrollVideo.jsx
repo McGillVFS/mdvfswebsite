@@ -79,7 +79,7 @@ export default function ScrollVideo({ overlay }) {
           className="w-full h-[1000px]"
         />
         <div className="absolute inset-0 z-10 flex items-center justify-center pointer-events-none">
-            <p className="text-white text-9xl font-semibold text-center drop-shadow">
+            <p className="text-white text-9xl font-semibold text-center drop-shadow" data-aos="fade-up">
               {overlay}
             </p>
         </div>
