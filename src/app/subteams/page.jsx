@@ -183,7 +183,7 @@ export default function Subteams() {
     
     return (
         <div>
-            <Title text={"Subteams"}/>
+            <Title text={"SUBTEAMS"}/>
             <div className="flex overflow-x-auto">
                 <ImgCard 
                     Index={0}

@@ -93,12 +93,10 @@ export default function Sponsorships() {
             <SubHeading text={"Become a Sponsor Today"} />
 
             <div>
-                <p className="text-xl font-tajawal px-4 pb-3">For sponsorship inquiries, please contact our capitain:</p>
-                <div className="flex px-4 pb-3 gap-4">
-                    <div className="bg-red-400 h-60 w-50 rounded-2xl"></div>
+                <p className="text-xl font-tajawal px-4 pb-3">For sponsorship inquiries, please see our contacts below:</p>
+                <div className="flex px-4 pb-6 gap-4">
                     <div>
-                        <p className="text-xl font-tajawal"><span className="font-bold">Name: </span>Zachary Tremblay</p>
-                        <p className="text-xl font-tajawal"><span className="font-bold">Phone: </span>438-927-171</p>
+                        <p className="text-xl font-tajawal"><span className="font-bold">Phone: </span>438-927-1711</p>
                         <p className="text-xl font-tajawal"><span className="font-bold">Email: </span>mdvfs.sponsorships@mcgilleus.ca</p>
 
 
