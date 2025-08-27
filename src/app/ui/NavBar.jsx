@@ -64,6 +64,7 @@ const NavBar = ({}) => {
                 onClick={toggleNav}
                 className={`fixed top-4 right-1 z-50 p-2 ${hamColor}`}
                 aria-label="Toggle navigation"
+                data-aos="fade-right" 
             >
                 {isOpen ? <IoMdClose className="size-8"/> 
                 : <GiHamburgerMenu className="size-8"/>}
@@ -76,7 +77,7 @@ const NavBar = ({}) => {
             )}
 
             {/* Sidenav */}
-            <div className={`fixed top-0 right-0 h-full w-70 bg-neutral-800/90 text-white transform transition-transform duration-300 ease-in-out z-40 ${isOpen ? 'translate-x-0' : 'translate-x-full'} z-40`}>
+            <div className={`fixed top-0 right-0 h-full w-70 bg-neutral-800/90 text-white transform transition-transform duration-500 ease-out z-40 ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
                 <div className="float-right h-full w-14 bg-red-600"></div>
                 <div className="p-6 pt-16">
                     <nav>

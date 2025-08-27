@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { useRouter } from 'next/navigation'
 import Image from 'next/image'
-import { FaXTwitter, FaInstagram, FaLinkedin, FaYoutube, FaEnvelope } from "react-icons/fa6";
+import { FaTiktok, FaInstagram, FaLinkedin, FaYoutube, FaEnvelope } from "react-icons/fa6";
 import { IconContext } from "react-icons";
 import MDVFS_Logo_Stroke from '../../../public/mdvfs_logo_web_stroke.svg'
 
@@ -84,7 +84,7 @@ const Footer = () => {
                     <div className="w-full flex justify-end">
                         <div className="justify-end w-3/10 h-auto grid grid-cols-5 gap-0.25">
                             <IconContext.Provider value={{ color: "white", size: "2em" }}>
-                                <FaXTwitter className="justify-self-end cursor-pointer"/>
+                                <FaTiktok className="justify-self-end cursor-pointer"/>
                             </IconContext.Provider>
 
                             <IconContext.Provider value={{ color: "white", size: "2em" }}>

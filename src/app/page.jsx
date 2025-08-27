@@ -79,10 +79,18 @@ export default function Home() {
                 
                     <div className="flex w-full items-end justify-end">   
                         <div className="flex columns-4 items-end p-10 space-x-6">
-                            <div className = "size-40 rounded-full bg-blue-400 border-2 border-white" data-aos="fade-down" data-aos-delay="300" onClick={() => {}} />
-                            <div className = "size-40 rounded-full bg-blue-400 border-2 border-white" data-aos="fade-down" data-aos-delay="450" onClick={() => {}} />
-                            <div className = "size-40 rounded-full bg-blue-400 border-2 border-white" data-aos="fade-down" data-aos-delay="600" onClick={() => {}} />
-                            <div className = "size-40 rounded-full bg-blue-400 border-2 border-white" data-aos="fade-down" data-aos-delay="750" onClick={() => {}} />
+                            <div className = "cursor-pointer size-40 rounded-full bg-white border-2 border-white overflow-hidden flex items-center justify-center hover:scale-105" data-aos="fade-down" data-aos-delay="300" onClick={() => window.open("https://www.tiktok.com/explore", "_blank")}>
+                                <img src="/images/social_icons/Tiktok.png" alt="tiktok icon" className="w-3/4 h-3/4 object-contain"/>
+                            </div>
+                            <div className = "cursor-pointer size-40 rounded-full bg-blue-400 border-2 border-white overflow-hidden flex items-center justify-center hover:scale-105" data-aos="fade-down" data-aos-delay="450" onClick={() => window.open("https://www.instagram.com/mcgill_mdvfs/?hl=en", "_blank")}>
+                                <img src="/images/social_icons/Instagram.png" alt="instagram icon" className="w-full h-full object-contain"/>
+                            </div>
+                            <div className = "cursor-pointer size-40 rounded-full bg-[#0274B3] border-2 border-white overflow-hidden flex items-center justify-center hover:scale-105" data-aos="fade-down" data-aos-delay="600" onClick={() => window.open("https://www.linkedin.com/company/mcgillmad/posts/?feedView=all", "_blank")}>
+                                <img src="/images/social_icons/LinkedIn.png" alt="linkedin icon" className="w-7/8 h-7/8 object-contain"/>     
+                            </div>
+                            <div className = "cursor-pointer size-40 rounded-full bg-white border-2 border-white overflow-hidden flex items-center justify-center hover:scale-105" data-aos="fade-down" data-aos-delay="750" onClick={() => window.open("https://www.youtube.com/channel/UC1zR8ieSpAJ5ad1hOVOjqig", "_blank")}>
+                                <img src="/images/social_icons/Youtube.png" alt="youtube icon" className="w-full h-full object-contain"/>
+                            </div>
                         </div>
                     </div>
                 </div>

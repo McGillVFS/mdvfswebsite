@@ -21,7 +21,7 @@ export default function Sponsorships() {
     
     return (
         <div>
-            <Title text={"Sponsorships"}/>
+            <Title text={"SPONSORSHIPS"}/>
 
             <SubHeading text={"Our Sponsors"} />
             <div className="px-4">
