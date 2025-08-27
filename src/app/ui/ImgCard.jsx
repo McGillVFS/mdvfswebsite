@@ -6,16 +6,16 @@ const ImgCard = ( { Index, ImgSrc, setIsOpen, Text, content, setContent }) => {
     const router = useRouter();
 
     return(
-        <div className="w-lg h-175 relative overflow-hidden rounded-lg group" onClick={() => {
+        <div className="w-lg h-175 relative overflow-hidden group" onClick={() => {
                 setContent(content)
                 setIsOpen(true)
             }} >
             <img 
                 src={ImgSrc} 
-                className="object-cover w-full h-full"
+                className="object-cover h-full"
                 alt={Text}
             />
-            <div className="absolute inset-x-0 bottom-0 bg-red-500 h-24 transition-all duration-500 ease-in-out group-hover:h-full rounded-b-lg group-hover:rounded-lg flex flex-col items-center">
+            <div className="absolute inset-x-0 bottom-0 bg-red-600 h-24 transition-all duration-500 ease-in-out group-hover:h-full flex flex-col items-center">
                 {/* This wrapper div handles the text positioning with transitions */}
                 <div className="w-full h-full flex flex-col justify-end group-hover:justify-center items-center p-4 transition-all duration-500 ease-in-out">
                 <p className="text-lg font-bold text-white text-center">{Text}</p>
