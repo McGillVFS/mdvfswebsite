@@ -18,22 +18,22 @@ export default function Home() {
     const timelineItems = [
         {
         year: "2020-2021",
-        img: "/drone_timeline/imgs/2024-2025.webp",
+        img: "/drone_timeline/imgs/2020-2021.webp",
         model: "/drone_timeline/models/2024-2025.gltf",
         },
         {
         year: "2021-2022",
-        img: "/drone_timeline/imgs/2024-2025.webp",
+        img: "/drone_timeline/imgs/2021-2022.webp",
         model: "/drone_timeline/models/2024-2025.gltf",
         },
         {
         year: "2022-2023",
-        img: "/drone_timeline/imgs/2024-2025.webp",
+        img: "/drone_timeline/imgs/2022-2023.webp",
         model: "/drone_timeline/models/2024-2025.gltf",
         },
         {
         year: "2023-2024",
-        img: "/drone_timeline/imgs/2024-2025.webp",
+        img: "/drone_timeline/imgs/2023-2024.webp",
         model: "/drone_timeline/models/2024-2025.gltf",
         },
         {
@@ -81,7 +81,7 @@ export default function Home() {
                         Follow<br />us.
                     </p>
                 
-                    <div className="flex w-full items-end justify-end">   
+                    <div className="flex w-full items-end justify-center sm:justify-end">   
                         <div className="flex columns-4 sm:items-end p-10 space-x-6">
                             <div className = "cursor-pointer size-25 sm:size-40 rounded-full bg-white border-2 border-white overflow-hidden flex items-center justify-center hover:scale-105" data-aos="fade-down" data-aos-delay="300" onClick={() => window.open("https://www.tiktok.com/explore", "_blank")}>
                                 <img src="/images/social_icons/Tiktok.png" alt="tiktok icon" className="w-3/4 h-3/4 object-contain"/>
