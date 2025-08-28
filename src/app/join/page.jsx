@@ -17,7 +17,7 @@ export default function Join() {
         <div>
             <Title text={"JOIN US"}/>
 
-            <div className="grid grid-cols-2 gap-5 p-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 p-4">
 
                 <InfoCard 
                 title={"Mentoring"}

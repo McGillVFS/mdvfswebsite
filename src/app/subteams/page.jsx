@@ -184,6 +184,7 @@ export default function Subteams() {
     return (
         <div>
             <Title text={"SUBTEAMS"}/>
+            {/*<div>
             <div className="flex overflow-x-auto">
                 <ImgCard 
                     Index={0}
@@ -262,7 +263,82 @@ export default function Subteams() {
                     content={FinancialsPopup}
                 />
             </div>
-            
+            </div>*/}
+
+            <div className="grid grid-cols-1 sm:grid-cols-3">
+                <ImgCard 
+                    Index={0}
+                    ImgSrc={'/subteams/ai_controls/img.jpg'}
+                    setIsOpen={setIsOpen}
+                    Text={'AI Controls'}
+                    setContent={setPopup}
+                    content={AIControlsPopup}
+                />
+                <ImgCard 
+                    Index={1}
+                    ImgSrc={'/subteams/propulsion/img.webp'}
+                    setIsOpen={setIsOpen}
+                    Text={'Propulsion Systems'}
+                    setContent={setPopup}
+                    content={PropulsionPopup}
+                />
+                <ImgCard 
+                    Index={1}
+                    ImgSrc={'/subteams/structure/img.jpg'}
+                    setIsOpen={setIsOpen}
+                    Text={'Structures, Body and Wings'}
+                    setContent={setPopup}
+                    content={StructurePopup}
+                />
+                <ImgCard 
+                    Index={1}
+                    ImgSrc={'/subteams/landing/img.png'}
+                    setIsOpen={setIsOpen}
+                    Text={'Landing Gear'}
+                    setContent={setPopup}
+                    content={LandingPopup}
+                />
+                <ImgCard 
+                    Index={1}
+                    ImgSrc={'/subteams/cfd/img.png'}
+                    setIsOpen={setIsOpen}
+                    Text={'CFD and FEA'}
+                    setContent={setPopup}
+                    content={CFDPopup}
+                />
+                <ImgCard 
+                    Index={1}
+                    ImgSrc={'/subteams/fpv/img.png'}
+                    setIsOpen={setIsOpen}
+                    Text={'FPV System'}
+                    setContent={setPopup}
+                    content={FPVPopup}
+                />
+                <ImgCard 
+                    Index={1}
+                    ImgSrc={'/subteams/power/img.jpg'}
+                    setIsOpen={setIsOpen}
+                    Text={'Power Management'}
+                    setContent={setPopup}
+                    content={PowerPopup}
+                />
+                <ImgCard 
+                    Index={1}
+                    ImgSrc={'/subteams/piloting/img.png'}
+                    setIsOpen={setIsOpen}
+                    Text={'Piloting'}
+                    setContent={setPopup}
+                    content={PilotingPopup}
+                />
+                <ImgCard 
+                    Index={1}
+                    ImgSrc={'/subteams/financials/img.jpg'}
+                    setIsOpen={setIsOpen}
+                    Text={'Financials'}
+                    setContent={setPopup}
+                    content={FinancialsPopup}
+                />
+            </div>
 
             {isOpen && (
                 <Popup setIsOpen={setIsOpen}>

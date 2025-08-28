@@ -6,7 +6,7 @@ const ImgCard = ( { Index, ImgSrc, setIsOpen, Text, content, setContent }) => {
     const router = useRouter();
 
     return(
-        <div className="w-lg h-175 relative overflow-hidden group" onClick={() => {
+        <div className="sm:w-full sm:h-175 w-full h-75 relative overflow-hidden group" onClick={() => {
                 setContent(content)
                 setIsOpen(true)
             }} >
