@@ -100,7 +100,7 @@ const Footer = () => {
                             </IconContext.Provider>
 
                             <IconContext.Provider value={{ color: "white", size: "2em" }}>
-                                <FaEnvelope className="justify-self-end cursor-pointer" onClick={() => window.open("mailto:yourname@example.com")}/>
+                                <FaEnvelope className="justify-self-end cursor-pointer" onClick={() => window.open("mailto:mdvfs.sponsorships@mcgilleus.ca")}/>
                             </IconContext.Provider>
 
                         </div>

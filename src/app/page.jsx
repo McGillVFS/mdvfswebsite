@@ -53,7 +53,7 @@ export default function Home() {
             <VideoBlock src="/videos/MAD_intro_video.mp4" />
 
             <div className='bg-black h-60'>
-                <p className="text-red-500 font-inter text-align-center font-extrabold text-[120px]/30 sm:text-[200px] sm:pl-5" data-aos="fade-up">Our Work</p>
+                <p className="text-red-500 font-inter text-align-center font-extrabold text-[120px]/30 sm:text-[200px] sm:pl-5 sm:pt-20" data-aos="fade-up">Our Work</p>
             </div>
 
             <div className="bg-black h-100 flex items-center justify-center">
