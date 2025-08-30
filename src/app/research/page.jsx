@@ -73,7 +73,7 @@ export default function Projects() {
 
             {/*<SubHeading text={"OUR PROJECTS"} />*/}
 
-            <div className="flex overflow-x-auto">
+            <div className="grid grid-cols-1 sm:grid-cols-2">
                 <ImgCard 
                     Index={0}
                     ImgSrc={'/research/cleaning/4.png'}
