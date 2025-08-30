@@ -53,11 +53,10 @@ export default function Home() {
             <VideoBlock src="/videos/MAD_intro_video.mp4" />
 
             <div className='bg-black h-60'>
-                <p className="text-red-500 font-inter text-align-center font-extrabold text-[100px] sm:text-[200px] sm:pl-5" data-aos="fade-up">Our Work</p>
-               
+                <p className="text-red-500 font-inter text-align-center font-extrabold text-[120px]/30 sm:text-[200px] sm:pl-5" data-aos="fade-up">Our Work</p>
             </div>
 
-            <div className="bg-black h-100">
+            <div className="bg-black h-100 flex items-center justify-center">
                 {/*
                 <div className="w-48 h-48 bg-blue-500" onClick={() => {
                     setModelPath("/drone_timeline/models/2024-2025.glb")
@@ -74,7 +73,7 @@ export default function Home() {
             </div>
 
             <div className="bg-gradient-to-b from-black to-red-600 sm:flex sm:flex-col justify-end">
-                <div className="h-45 sm:h-72" />
+                <div className="h-44 sm:h-72" />
 
                 <div className="sm:flex"> 
                     <p className=" text-white font-inter font-extrabold text-[150px] sm:text-[200px] -tracking-wider leading-35 px-5 sm:p-12" data-aos="fade-down">

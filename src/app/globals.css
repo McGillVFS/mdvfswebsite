@@ -74,8 +74,8 @@ li{
 
 .slick-slide > div {
 
-  padding: 30px 20px;
-  min-height: 150px;
+  padding: 30px 30px;
+  min-height: 0px;
   display: flex;
   justify-content: center;
   align-items: center;

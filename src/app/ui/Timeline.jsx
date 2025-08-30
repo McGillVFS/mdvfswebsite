@@ -41,14 +41,14 @@ const Timeline = ({setIsOpen, setModelPath, timelineItems}) => {
     <div className="slider-container">
       <Slider {...settings}>
        {timelineItems.map((item, index) => (
-          <div className="flex justify-center" key={index} 
+          <div className="flex flex-col justify-center items-center" key={index} 
             onClick={() => {
                 setModelPath(item.model)  
                 setIsOpen(true)
               }  
             }>
-            <img src={item.img} alt={`Model for ${item.year}`} className="w-64 h-48" />
-            <h3 className="text-white font-tajawal font-light text-base pr-8">{item.year}</h3>
+            <img src={item.img} alt={`Model for ${item.year}`} className="sm:w-64 sm:h-48 h-32 w-auto" />
+            <h3 className="text-white font-tajawal font-light text-xs sm:text-base">{item.year}</h3>
           </div>
         ))}
       </Slider>
