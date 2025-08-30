@@ -27,7 +27,7 @@ export default function Sponsorships() {
             <div className="px-4">
                 <p className="text-gray-500 text-lg font-tajawal pb-3">Thank you to all our sponsors:</p>
             </div>
-            <img alt="Sponsors" className="w-full h-auto object-cover mb-8"/>
+            <img src="/images/sponsors.png" alt="Sponsors" className="w-250 h-auto object-cover mb-8"/>
 
             <SubHeading text={"Why Sponsor Us?"} />
 
@@ -90,20 +90,27 @@ export default function Sponsorships() {
             </div>
 
             <SubHeading text={"Alumni Experience"} />
+
+            <div className="px-4 pb-2"> {/* Temporary fix: <ul> doesn't work with Tailwind atm */}
+                <p className="text-xl font-tajawal pb-1">•&nbsp;&nbsp;CAE</p>
+                <p className="text-xl font-tajawal pb-1">•&nbsp;&nbsp;Macdonald Dettwiler and Associates</p>
+                <p className="text-xl font-tajawal pb-1">•&nbsp;&nbsp;Lockheed Martin</p>
+                <p className="text-xl font-tajawal pb-1">•&nbsp;&nbsp;Bombardier</p>
+                <p className="text-xl font-tajawal pb-1">•&nbsp;&nbsp;Canadian Space Agency</p>
+                <p className="text-xl font-tajawal">•&nbsp;&nbsp;Airbus</p>
+            </div>
+
             <SubHeading text={"Become a Sponsor Today"} />
 
             <div>
                 <p className="text-xl font-tajawal px-4 pb-3">For sponsorship inquiries, please see our contacts below:</p>
-                <div className="flex px-4 pb-6 gap-4">
+                <div className="flex px-4 pb-8 gap-4">
                     <div>
                         <p className="text-xl font-tajawal"><span className="font-bold">Phone: </span>438-927-1711</p>
                         <p className="text-xl font-tajawal"><span className="font-bold">Email: </span>mdvfs.sponsorships@mcgilleus.ca</p>
-
-
                     </div>
                 </div>
             </div>
-
         </div>
     )
 
