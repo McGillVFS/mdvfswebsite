@@ -84,23 +84,23 @@ const Footer = () => {
                     <div className="w-full flex justify-end">
                         <div className="justify-end w-3/10 h-auto grid grid-cols-5 gap-0.25">
                             <IconContext.Provider value={{ color: "white", size: "2em" }}>
-                                <FaTiktok className="justify-self-end cursor-pointer"/>
+                                <FaTiktok className="justify-self-end cursor-pointer" onClick={() => window.open("https://www.tiktok.com/explore", "_blank")}/>
                             </IconContext.Provider>
 
                             <IconContext.Provider value={{ color: "white", size: "2em" }}>
-                                <FaInstagram className="justify-self-end cursor-pointer"/>
+                                <FaInstagram className="justify-self-end cursor-pointer" onClick={() => window.open("https://www.instagram.com/mcgill_mdvfs/?hl=en", "_blank")}/>
                             </IconContext.Provider>
 
                             <IconContext.Provider value={{ color: "white", size: "2em" }}>
-                                <FaLinkedin className="justify-self-end cursor-pointer"/>
+                                <FaLinkedin className="justify-self-end cursor-pointer" onClick={() => window.open("https://www.linkedin.com/company/mcgillmad/posts/?feedView=all", "_blank")}/>
                             </IconContext.Provider>
                             
                             <IconContext.Provider value={{ color: "white", size: "2em" }}>
-                                <FaYoutube className="justify-self-end cursor-pointer"/>
+                                <FaYoutube className="justify-self-end cursor-pointer" onClick={() => window.open("https://www.youtube.com/channel/UC1zR8ieSpAJ5ad1hOVOjqig", "_blank")}/>
                             </IconContext.Provider>
 
                             <IconContext.Provider value={{ color: "white", size: "2em" }}>
-                                <FaEnvelope className="justify-self-end cursor-pointer"/>
+                                <FaEnvelope className="justify-self-end cursor-pointer" onClick={() => window.open("mailto:yourname@example.com")}/>
                             </IconContext.Provider>
 
                         </div>

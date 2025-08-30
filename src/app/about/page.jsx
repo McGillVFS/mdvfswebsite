@@ -26,7 +26,7 @@ export default function About() {
           design, research, and competition.
         </p>
         <img
-          className="m-8 w-100 rounded-lg border-2 border-black"
+          className="mt-2 mb-8 mx-8 sm:m-8 w-100 rounded-lg border-2 border-black"
           src="/images/aboutus.jpg"
           alt="group of members"
         />
