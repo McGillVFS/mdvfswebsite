@@ -2,7 +2,7 @@
 import { useEffect } from "react";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import Navbar from "./ui/Navbar"
+import Navbar from "./ui/NavBar"
 import Footer from "./ui/Footer"
 import "./globals.css";
 import "slick-carousel/slick/slick.css";

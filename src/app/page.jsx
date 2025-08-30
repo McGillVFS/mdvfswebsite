@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import { useRouter } from 'next/navigation'
-import Navbar from "./ui/Navbar"
+import Navbar from "./ui/NavBar"
 import Footer from "./ui/Footer"
 import ScrollVideo from "./ui/ScrollVideo"
 import ThreeDModelPopup from "./ui/3DModelPopup"
