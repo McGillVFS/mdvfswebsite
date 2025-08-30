@@ -3,7 +3,7 @@ import { useRouter } from 'next/navigation'
 import Image from 'next/image'
 import { FaTiktok, FaInstagram, FaLinkedin, FaYoutube, FaEnvelope } from "react-icons/fa6";
 import { IconContext } from "react-icons";
-import MDVFS_Logo_Stroke from '../../../public/mdvfs_logo_web_stroke.svg'
+import MDVFS_Logo_Stroke from '../../../public/main_logo.png'
 
 
 
@@ -66,7 +66,7 @@ const Footer = () => {
 
                 <div className="w-2/10 h-full flex items-center justify-center">
                     {/*<div className="w-30 h-30 bg-amber-400"></div>*/}
-                    <Image unoptimized src={MDVFS_Logo_Stroke} width={140} height={140} alt="mdvfs_logo" className="cursor-pointer" onClick={() => router.push("")}/>
+                    <Image src={MDVFS_Logo_Stroke} width={240} height={240} alt="mdvfs_logo" className="cursor-pointer" onClick={() => router.push("/")}/>
 
                 </div>
 

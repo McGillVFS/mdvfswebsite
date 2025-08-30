@@ -53,7 +53,7 @@ export default function Home() {
             <VideoBlock src="/videos/MAD_intro_video.mp4" />
 
             <div className='bg-black h-60'>
-                <p className="text-red-500 font-inter font-extrabold text-[200px] pl-5" data-aos="fade-up">Our Work</p>
+                <p className="text-red-500 font-inter text-align-center font-extrabold text-[100px] sm:text-[200px] sm:pl-5" data-aos="fade-up">Our Work</p>
                
             </div>
 
@@ -67,7 +67,7 @@ export default function Home() {
                 <Timeline timelineItems={timelineItems} setIsOpen={setIsOpen} setModelPath={setModelPath} />
             </div>
 
-            <ScrollVideo overlay="McGill Drones and Vertical Flight Society" />
+            <ScrollVideo overlay="McGill Aerial Design" />
 
             <div className="bg-black flex justify-center items-center">
                 <p className = "text-white font-inter font-regular text-[70px] p-5" data-aos="fade-up">AMBITION. DISCOVERY.</p>

@@ -132,7 +132,7 @@ export default function About() {
           title={"VP Communications"}
         />
         <ProfileCard
-          imageUrl={"/images/profile_placeholder.jpg"}
+          imageUrl={"/images/profile_images/David.JPG"}
           name={"David Bard"}
           program={"Honours Computer Science"}
           title={"VP Website"}

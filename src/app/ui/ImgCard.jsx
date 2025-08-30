@@ -12,7 +12,7 @@ const ImgCard = ( { Index, ImgSrc, setIsOpen, Text, content, setContent }) => {
             }} >
             <img 
                 src={ImgSrc} 
-                className="object-cover h-full"
+                className="object-cover h-full w-full"
                 alt={Text}
             />
             <div className="absolute inset-x-0 bottom-0 bg-red-600 h-24 transition-all duration-500 ease-in-out group-hover:h-full flex flex-col items-center">
