@@ -72,14 +72,14 @@ export default function ScrollVideo({ overlay }) {
   }, [frames, scrollYProgress]);
 
   return (
-    <div ref={wrapperRef} className="h-[2000px]">
+    <div ref={wrapperRef} className="h-[vh]">
       <div className="sticky top-0">
         <canvas
           ref={canvasRef}
-          className="w-full h-[1000px]"
+          className="w-full h-auto"
         />
         <div className="absolute inset-0 z-10 flex items-center justify-center pointer-events-none">
-            <p className="text-white text-9xl font-semibold text-center drop-shadow" data-aos="fade-up">
+            <p className="hidden sm:block text-white text-9xl font-semibold text-center drop-shadow" data-aos="fade-up">
               {overlay}
             </p>
         </div>

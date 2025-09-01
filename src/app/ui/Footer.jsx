@@ -84,7 +84,7 @@ const Footer = () => {
                     <div className="w-full flex justify-end">
                         <div className="justify-end w-3/10 h-auto grid grid-cols-5 gap-0.25">
                             <IconContext.Provider value={{ color: "white", size: "2em" }}>
-                                <FaTiktok className="justify-self-end cursor-pointer" onClick={() => window.open("https://www.tiktok.com/explore", "_blank")}/>
+                                <FaTiktok className="justify-self-end cursor-pointer" onClick={() => window.open("https://www.tiktok.com/@mcgillmdvfs?lang=en", "_blank")}/>
                             </IconContext.Provider>
 
                             <IconContext.Provider value={{ color: "white", size: "2em" }}>
