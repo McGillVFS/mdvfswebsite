@@ -53,7 +53,7 @@ export default function Home() {
             <VideoBlock src="/videos/MAD_intro_video.mp4" />
 
             <div className='bg-black h-60'>
-                <p className="text-red-500 font-inter text-align-center font-extrabold text-[120px]/30 sm:text-[200px] sm:pl-5" data-aos="fade-up">Our Work</p>
+                <p className="text-red-500 font-inter text-align-center font-extrabold text-[100px]/30 pt-5 sm:text-[200px] sm:pl-5 sm:pt-20" data-aos="fade-up">Our Work</p>
             </div>
 
             <div className="bg-black h-100 flex items-center justify-center">
@@ -69,7 +69,7 @@ export default function Home() {
             <ScrollVideo overlay="McGill Aerial Design" />
 
             <div className="bg-black flex justify-center items-center">
-                <p className = "text-white font-inter font-regular text-[70px] p-5" data-aos="fade-up">AMBITION. DISCOVERY.</p>
+                <p className = "text-white font-inter font-regular text-[40px] sm:text-[70px] p-5" data-aos="fade-up">AMBITION. DISCOVERY.</p>
             </div>
 
             <div className="bg-gradient-to-b from-black to-red-600 sm:flex sm:flex-col justify-end">
@@ -82,7 +82,7 @@ export default function Home() {
                 
                     <div className="flex w-full items-end justify-center sm:justify-end">   
                         <div className="flex columns-4 sm:items-end p-10 space-x-6">
-                            <div className = "cursor-pointer size-25 sm:size-40 rounded-full bg-white border-2 border-white overflow-hidden flex items-center justify-center hover:scale-105" data-aos="fade-down" data-aos-delay="300" onClick={() => window.open("https://www.tiktok.com/explore", "_blank")}>
+                            <div className = "cursor-pointer size-25 sm:size-40 rounded-full bg-white border-2 border-white overflow-hidden flex items-center justify-center hover:scale-105" data-aos="fade-down" data-aos-delay="300" onClick={() => window.open("https://www.tiktok.com/@mcgillmdvfs?lang=en", "_blank")}>
                                 <img src="/images/social_icons/Tiktok.png" alt="tiktok icon" className="w-3/4 h-3/4 object-contain"/>
                             </div>
                             <div className = "cursor-pointer size-25 sm:size-40 rounded-full bg-blue-400 border-2 border-white overflow-hidden flex items-center justify-center hover:scale-105" data-aos="fade-down" data-aos-delay="450" onClick={() => window.open("https://www.instagram.com/mcgill_mdvfs/?hl=en", "_blank")}>
