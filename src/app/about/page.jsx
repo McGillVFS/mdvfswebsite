@@ -160,7 +160,7 @@ export default function About() {
         <p className="font-tajawal text-black-500 text-xl p-3">2021: Vertical Flight Society at McGill Founded</p>
         <p className="font-tajawal text-black-500 text-xl p-3">2023: Recognition on the International Stage at the DBVF Competition</p>
         <p className="font-tajawal text-black-500 text-xl p-3">2023: Rebrand to McGill Drones and Vertical Flight Society</p>
-        <p className="font-tajawal text-black-500 text-xl p-3">2025: Rebrand to McGill Aerial Drones</p>
+        <p className="font-tajawal text-black-500 text-xl p-3">2025: Rebrand to McGill Aerial Design</p>
       </div>
 
     </div>
