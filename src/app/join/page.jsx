@@ -54,7 +54,7 @@ export default function Join() {
             </div>
 
             <div className="flex items-center justify-center py-8">
-                <button onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLScCcTC_ENaQkox-oTIMuKhlupoZ0Chp19z0_999irDzpEj_iQ/viewform", "_blank")} className="bg-red-500 hover:bg-red-600 text-white font-bold px-4 rounded-xl h-14 min-w-11/12 cursor-pointer">Apply Now!</button>
+                <button onClick={() => window.open("https://docs.google.com/forms/d/1zDdhk-TNLQL2yqBGmVQZ_d1SJZEsFiQGE-rcQCcJGLU/viewform?edit_requested=true", "_blank")} className="bg-red-500 hover:bg-red-600 text-white font-bold px-4 rounded-xl h-14 min-w-11/12 cursor-pointer">Apply Now!</button>
             </div>
             
         </div>
