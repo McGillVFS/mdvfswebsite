@@ -50,11 +50,13 @@ export default function About() {
         <ProfileCard
           imageUrl={"/images/profile_images/Romain.png"}
           name={"Romain Tarayre"}
-          title={"Avionics Lead"}
+          program={"Mechanical Engineering"}
+          title={"Aerostructures Team Director"}
         />
         <ProfileCard
           imageUrl={"/images/profile_placeholder.jpg"}
           name={"Jiwoong Choi"}
+          program={"Software Engineering"}
           title={"Avionics Lead"}
         />
         <ProfileCard
@@ -66,16 +68,19 @@ export default function About() {
         <ProfileCard
           imageUrl={"/images/profile_placeholder.jpg"}
           name={"Elliot Markovich"}
+          program={"Software Engineering"}
           title={"Avionics Lead"}
         />
         <ProfileCard
           imageUrl={"/images/profile_placeholder.jpg"}
           name={"Amaia Pelletier"}
+          program={"Bioressource Engineering"}
           title={"Avionics Lead"}
         />
         <ProfileCard
           imageUrl={"/images/profile_placeholder.jpg"}
           name={"Junho Jun"}
+          program={"Chemical Engineering"}
           title={"Aerostructures Lead"}
         />
         <ProfileCard
