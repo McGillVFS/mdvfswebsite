@@ -2,7 +2,7 @@
 
 import Slider from "react-slick";
 import { useState } from "react";
-import { FaChevronLeft, FaChevronRight } from "react-icons/fa"; //use react-icons chevron arrows for left/right arrows
+import { FaChevronLeft, FaChevronRight, FaLessThanEqual } from "react-icons/fa"; //use react-icons chevron arrows for left/right arrows
 
 //custom components for left/right arrows
 const PrevArrow = ({ className, style, onClick }) => (
@@ -27,14 +27,14 @@ const Timeline = ({setIsOpen, setModelPath, timelineItems}) => {
     className: "center",
     centerMode: true,
     infinite: true,
-    centerPadding: "60px",
+    centerPadding: "0px",
     slidesToShow: 3,
     speed: 500,
     autoplay: true,     
     autoplaySpeed: 3000,
     pauseOnHover: true,
     prevArrow: <PrevArrow />,
-    nextArrow: <NextArrow />
+    nextArrow: <NextArrow />,
   };
 
   return (
@@ -47,7 +47,7 @@ const Timeline = ({setIsOpen, setModelPath, timelineItems}) => {
                 setIsOpen(true)
               }  
             }>
-            <img src={item.img} alt={`Model for ${item.year}`} className="sm:w-64 sm:h-48 h-32 w-auto" />
+            <img src={item.img} alt={`Model for ${item.year}`} className="object-fit sm:w-64 sm:h-48 w-full h-auto" />
             <h3 className="text-white font-tajawal font-light text-xs sm:text-base">{item.year}</h3>
           </div>
         ))}

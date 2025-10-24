@@ -55,9 +55,16 @@ li{
 }
 
 /* temporary css for timeline */
+
 .slider-container {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .slider-container {
+    max-width: 80%;
+  }
 }
 
 .slick-slide {
@@ -73,7 +80,6 @@ li{
 }
 
 .slick-slide > div {
-
   padding: 30px 30px;
   min-height: 0px;
   display: flex;
@@ -82,6 +88,12 @@ li{
   text-align: center;
   transition: opacity 0.3s ease, transform 0.3s ease;
   opacity: 0.5;
+}
+
+@media (max-width: 768px) {
+  .slick-slide > div {
+    padding: 0px;
+  }
 }
 
 .slick-center > div {
