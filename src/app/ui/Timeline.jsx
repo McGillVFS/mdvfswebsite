@@ -35,6 +35,7 @@ const Timeline = ({setIsOpen, setModelPath, timelineItems}) => {
     pauseOnHover: true,
     prevArrow: <PrevArrow />,
     nextArrow: <NextArrow />,
+
   };
 
   return (
@@ -48,7 +49,7 @@ const Timeline = ({setIsOpen, setModelPath, timelineItems}) => {
               }  
             }>
             <img src={item.img} alt={`Model for ${item.year}`} className="object-fit sm:w-64 sm:h-48 w-full h-auto" />
-            <h3 className="text-white font-tajawal font-light text-xs sm:text-base">{item.year}</h3>
+            <h3 className="text-white font-tajawal font-light text-[10px] sm:text-base">{item.year}</h3>
           </div>
         ))}
       </Slider>

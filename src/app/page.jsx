@@ -56,7 +56,7 @@ export default function Home() {
                 <p className="text-red-500 font-inter text-align-center font-extrabold text-[100px]/30 pt-5 sm:text-[200px] sm:pl-5 sm:pt-20" data-aos="fade-up">Our Work</p>
             </div>
 
-            <div className="bg-black h-100 flex items-center justify-center">
+            <div className="bg-black sm:h-100 h-50 flex items-center justify-center">
                 {/*
                 <div className="w-48 h-48 bg-blue-500" onClick={() => {
                     setModelPath("/drone_timeline/models/2024-2025.glb")
