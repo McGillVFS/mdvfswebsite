@@ -80,7 +80,7 @@ li{
 }
 
 .slick-slide > div {
-  padding: 30px 30px;
+  padding: 30px 40px;
   min-height: 0px;
   display: flex;
   justify-content: center;
