@@ -1,4 +1,6 @@
-const ResearchPopup = ({ title, project_leads, content }) => {
+import ImgCaption from "./ImgCaption";
+
+const ResearchPopup = ({ title, project_leads, content, figures }) => {
     return (
         <div>
             <p className="text-2xl font-bold text-white font-tajawal">{title}</p>
@@ -23,6 +25,14 @@ const ResearchPopup = ({ title, project_leads, content }) => {
 
             <div>
                 <p className="text-sm text-white font-tajawal py-2">{content}</p>
+            </div>
+
+            <div className="flex items-center flex-col">
+                {figures && figures.map((figure, index) => (
+                    <div key={index} className="pt-5">
+                        <ImgCaption src={figure.src} Text={figure.caption} />
+                    </div>
+                ))}
             </div>
             
         </div>
