@@ -2,7 +2,7 @@
 
 export default function VideoBlock({ src }) {
   return (
-    <div className="relative items-center justify-center w-full h-screen overflow-hidden">
+    <div className="relative items-center justify-center w-screen h-screen overflow-hidden">
       <video 
         src={src}
         autoPlay 
