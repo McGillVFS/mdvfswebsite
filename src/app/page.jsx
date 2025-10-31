@@ -69,10 +69,10 @@ export default function Home() {
             <ScrollVideo overlay="McGill Aerial Design" />
 
             <div className="bg-black flex justify-center items-center">
-                <p className = "text-white font-inter font-regular text-[30px] sm:text-[70px] p-5 text-center" data-aos="fade-up">AMBITION.<br />DISCOVERY.</p>
+                <p className = "text-white font-inter font-regular text-[30px] sm:text-[70px] p-5 text-center" data-aos="fade-up">AMBITION. DISCOVERY.</p>
             </div>
 
-            <div className="bg-gradient-to-b from-black to-red-600 sm:flex sm:flex-col justify-end">
+            <div className="bg-gradient-to-b from-black to-red-600 sm:flex sm:flex-col justify-end h-[65vh] sm:h-[90vh]">
                 <div className="h-44 sm:h-72" />
 
                 <div className="sm:flex"> 
@@ -80,19 +80,20 @@ export default function Home() {
                         Follow<br />us.
                     </p>
 
-                    <p className=" text-white font-inter font-extrabold text-[70px] -tracking-wider leading-35 px-5 sm:p-12 sm:hidden flex text-center" data-aos="fade-down">
+                    <p className="text-white font-inter font-extrabold text-[70px] -tracking-wider leading-35 px-5 sm:p-12 sm:hidden flex justify-center text-center" data-aos="fade-down">
                         Follow us.
                     </p>
+
                 
                     <div className="flex w-full items-end justify-center sm:justify-end py-2">
                     <div className="flex flex-wrap items-end p-4 sm:p-10 gap-3 sm:gap-6">
                         {/* TikTok */}
                         <div
-                        className="cursor-pointer size-[18vw] sm:size-[10vw] md:size-[7vw] lg:size-[5vw] xl:size-[4vw] max-w-[10rem] max-h-[10rem] rounded-full bg-white border-2 border-white overflow-hidden flex items-center justify-center transition-transform hover:scale-105"
+                        className="cursor-pointer size-[18vw] max-w-[10rem] max-h-[10rem] rounded-full bg-white border-2 border-white overflow-hidden flex items-center justify-center transition-transform hover:scale-105"
                         data-aos="fade-down"
                         data-aos-delay="300"
                         onClick={() =>
-                            window.open("https://www.tiktok.com/@mcgillmdvfs?lang=en", "_blank")
+                            window.open("https://www.tiktok.com/@mcgillaerialdesign", "_blank")
                         }
                         >
                         <img
@@ -104,11 +105,11 @@ export default function Home() {
 
                         {/* Instagram */}
                         <div
-                        className="cursor-pointer size-[18vw] sm:size-[10vw] md:size-[7vw] lg:size-[5vw] xl:size-[4vw] max-w-[10rem] max-h-[10rem] rounded-full bg-blue-400 border-2 border-white overflow-hidden flex items-center justify-center transition-transform hover:scale-105"
+                        className="cursor-pointer size-[18vw] max-w-[10rem] max-h-[10rem] rounded-full bg-blue-400 border-2 border-white overflow-hidden flex items-center justify-center transition-transform hover:scale-105"
                         data-aos="fade-down"
                         data-aos-delay="450"
                         onClick={() =>
-                            window.open("https://www.instagram.com/mcgill_mdvfs/?hl=en", "_blank")
+                            window.open("https://www.instagram.com/mcgillaerialdesign/", "_blank")
                         }
                         >
                         <img
@@ -120,7 +121,7 @@ export default function Home() {
 
                         {/* LinkedIn */}
                         <div
-                        className="cursor-pointer size-[18vw] sm:size-[10vw] md:size-[7vw] lg:size-[5vw] xl:size-[4vw] max-w-[10rem] max-h-[10rem] rounded-full bg-[#0274B3] border-2 border-white overflow-hidden flex items-center justify-center transition-transform hover:scale-105"
+                        className="cursor-pointer size-[18vw] max-w-[10rem] max-h-[10rem] rounded-full bg-[#0274B3] border-2 border-white overflow-hidden flex items-center justify-center transition-transform hover:scale-105"
                         data-aos="fade-down"
                         data-aos-delay="600"
                         onClick={() =>
@@ -139,7 +140,7 @@ export default function Home() {
 
                         {/* YouTube */}
                         <div
-                        className="cursor-pointer size-[18vw] sm:size-[10vw] md:size-[7vw] lg:size-[5vw] xl:size-[4vw] max-w-[10rem] max-h-[10rem] rounded-full bg-white border-2 border-white overflow-hidden flex items-center justify-center transition-transform hover:scale-105"
+                        className="cursor-pointer size-[18vw] max-w-[10rem] max-h-[10rem] rounded-full bg-white border-2 border-white overflow-hidden flex items-center justify-center transition-transform hover:scale-105"
                         data-aos="fade-down"
                         data-aos-delay="750"
                         onClick={() =>
