@@ -47,14 +47,14 @@ export default function Join() {
 
             </div>
 
-            <SubHeading text={"Application Form"} />
+            <SubHeading text={"APPLICATION FORM"} />
 
             <div className="px-4">
                 <p className="text-gray-500 text-lg font-tajawal pb-1">Join the newest and fastest growing design team at McGill!</p>
             </div>
 
             <div className="flex items-center justify-center py-8">
-                <button onClick={() => window.open("https://docs.google.com/forms/d/1zDdhk-TNLQL2yqBGmVQZ_d1SJZEsFiQGE-rcQCcJGLU/viewform?edit_requested=true", "_blank")} className="bg-red-500 hover:bg-red-600 text-white font-bold px-4 rounded-xl h-14 min-w-11/12 cursor-pointer">Apply Now!</button>
+                <button onClick={() => window.open("https://docs.google.com/forms/d/1zDdhk-TNLQL2yqBGmVQZ_d1SJZEsFiQGE-rcQCcJGLU/viewform?edit_requested=true", "_blank")} className="bg-red-500 hover:bg-red-600 text-white px-4 rounded-xl h-14 min-w-11/12 cursor-pointer">Apply Now!</button>
             </div>
             
         </div>
