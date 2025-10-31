@@ -66,7 +66,7 @@ export default function Home() {
                 <Timeline timelineItems={timelineItems} setIsOpen={setIsOpen} setModelPath={setModelPath} />
             </div>
 
-            <ScrollVideo overlay="McGill Aerial Design" />
+            <ScrollVideo overlay="" />
 
             <div className="bg-black flex justify-center items-center">
                 <p className = "text-white font-inter font-regular text-[30px] sm:text-[70px] p-5 text-center" data-aos="fade-up">AMBITION. DISCOVERY.</p>

@@ -39,6 +39,11 @@ const NavBar = ({}) => {
             page: "Subteams",
             link: '/subteams',
             id: 5
+        },
+        {
+            page: "Hackathon",
+            link: '/hackathon',
+            id: 6
         }
     ]
 
