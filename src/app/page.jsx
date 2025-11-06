@@ -8,7 +8,7 @@ import ScrollVideo from "./ui/ScrollVideo"
 import ThreeDModelPopup from "./ui/3DModelPopup"
 import Timeline from "./ui/Timeline"
 import VideoBlock from "./ui/VideoBlock"
-
+import Head from "next/head";
 
 export default function Home() {
 
@@ -49,6 +49,7 @@ export default function Home() {
     ];
     
     return (
+        <>
         <div>
             <VideoBlock src="/videos/MAD_intro_video.mp4" />
 
@@ -170,6 +171,7 @@ export default function Home() {
             
 
         </div>
+        </>
     )
 
 }
