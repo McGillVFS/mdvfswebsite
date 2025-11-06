@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { useRouter } from 'next/navigation'
 import Title from "../ui/Title"
 import SubHeading from "../ui/SubHeading";
@@ -11,6 +11,10 @@ import Popup from "../ui/Popup";
 export default function Projects() {
     const [isOpen, setIsOpen] = useState(false);
     const [researchPopup, setResearchPopup] = useState(null);
+
+    useEffect(() => {
+    document.title = "Research | McGill Aerial Design";
+    }, []);
 
     const researchPopupOne = (
         <ResearchPopup 

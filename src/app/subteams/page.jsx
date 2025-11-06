@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { useRouter } from 'next/navigation'
 import Title from "../ui/Title"
 import SubteamsPopup from "../ui/SubteamsPopup";
@@ -9,10 +9,12 @@ import Popup from "../ui/Popup"
 
 export default function Subteams() {
     
+    useEffect(() => {
+    document.title = "Subteams | McGill Aerial Design";
+    }, []);
+    
     const [isOpen, setIsOpen] = useState(false);
     const [popup, setPopup] = useState("");
-
-    
 
     const AerostructuresPopup = (
         <SubteamsPopup 

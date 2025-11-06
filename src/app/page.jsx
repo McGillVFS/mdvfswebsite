@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { useRouter } from 'next/navigation'
 import Navbar from "./ui/NavBar"
 import Footer from "./ui/Footer"
@@ -8,7 +8,6 @@ import ScrollVideo from "./ui/ScrollVideo"
 import ThreeDModelPopup from "./ui/3DModelPopup"
 import Timeline from "./ui/Timeline"
 import VideoBlock from "./ui/VideoBlock"
-import Head from "next/head";
 
 export default function Home() {
 
@@ -47,9 +46,15 @@ export default function Home() {
         model: "/drone_timeline/models/2025-2026.gltf",
         }
     ];
+
+    useEffect(() => {
+    document.title = "Home | McGill Aerial Design";
+    document
+      .querySelector('meta[name="description"]')
+      ?.setAttribute("content", "Explore our projects, drones, and innovation at McGill Aerial Design.");
+    }, []);
     
     return (
-        <>
         <div>
             <VideoBlock src="/videos/MAD_intro_video.mp4" />
 
@@ -171,7 +176,6 @@ export default function Home() {
             
 
         </div>
-        </>
     )
 
 }

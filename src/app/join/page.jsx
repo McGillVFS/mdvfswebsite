@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { useRouter } from 'next/navigation'
 import Title from "../ui/Title"
 import InfoCard from "../ui/InfoCard"
@@ -12,6 +12,10 @@ import { LuGlobe } from "react-icons/lu";
 
 
 export default function Join() {
+
+    useEffect(() => {
+    document.title = "Join Us | McGill Aerial Design";
+    }, []);
     
     return (
         <div>

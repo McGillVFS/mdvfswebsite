@@ -1,12 +1,17 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import Title from "../ui/Title";
 import SubHeading from "../ui/SubHeading";
 import ProfileCard from "../ui/ProfileCard";
 
 export default function About() {
+
+  useEffect(() => {
+  document.title = "About Us | McGill Aerial Design";
+  }, []);
+
   return (
     <div>
       <Title text={"ABOUT US"} />
