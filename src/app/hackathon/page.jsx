@@ -13,7 +13,7 @@ export default function Hackathon() {
   }, []);
     
     return (
-        <div className="pb-50">
+        <div className="pb-65">
           <Title text={"HACKATHON"}/>
 
           <SubHeading text={"AEROHACKS"} />

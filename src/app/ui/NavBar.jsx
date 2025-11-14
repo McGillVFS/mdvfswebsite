@@ -44,6 +44,11 @@ const NavBar = ({}) => {
             page: "Hackathon",
             link: '/hackathon',
             id: 6
+        },
+        {
+            page: "Feedback",
+            link: '/feedback',
+            id: 7
         }
     ]
 
