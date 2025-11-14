@@ -1,6 +1,6 @@
 const InfoCard = ({ title, description, icon }) => {
   return (
-    <div className="flex p-4 bg-white rounded-lg shadow-md border border-solid border-gray-300">
+    <div className="flex p-4 bg-white dark:bg-black rounded-lg shadow-md border border-solid border-gray-300">
         <div className="p-2">
             {icon}
         </div>

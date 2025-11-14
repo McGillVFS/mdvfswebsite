@@ -51,10 +51,10 @@ export default function Join() {
 
             </div>
 
-            <SubHeading text={"APPLICATION FORM"} />
+            <SubHeading text={"Application Form"} />
 
             <div className="px-4">
-                <p className="text-gray-500 text-lg font-tajawal pb-1">Join the newest and fastest growing design team at McGill!</p>
+                <p className="text-black-500 text-xl font-tajawal pb-1">Join the newest and fastest growing design team at McGill!</p>
             </div>
 
             <div className="flex items-center justify-center py-8">

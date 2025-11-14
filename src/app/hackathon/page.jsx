@@ -16,7 +16,7 @@ export default function Hackathon() {
         <div className="pb-65">
           <Title text={"HACKATHON"}/>
 
-          <SubHeading text={"AEROHACKS"} />
+          <SubHeading text={"AeroHacks"} />
 
           <div className="px-4">
             <p className="text-black-500 text-xl font-tajawal pb-1">Apply to AeroHacks!</p>

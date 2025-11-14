@@ -16,7 +16,7 @@ export default function Feedback() {
         <div className="pb-65">
           <Title text={"FEEDBACK"}/>
 
-          <SubHeading text={"FEEDBACK FORM"} />
+          <SubHeading text={"Feedback Form"} />
 
           <div className="px-4">
             <p className="text-black-500 text-xl font-tajawal pb-1">Found a bug or have a suggestion about the website? Let us know.</p>
