@@ -18,22 +18,22 @@ export default function Home() {
         {
         year: "2020-2021",
         img: "/drone_timeline/imgs/2020-2021.webp",
-        model: "/drone_timeline/models/2024-2025.gltf",
+        model: "/drone_timeline/models/2022-2023.glb",
         },
         {
         year: "2021-2022",
         img: "/drone_timeline/imgs/2021-2022.webp",
-        model: "/drone_timeline/models/2024-2025.gltf",
+        model: "/drone_timeline/models/2022-2023.glb",
         },
         {
         year: "2022-2023",
         img: "/drone_timeline/imgs/2022-2023.webp",
-        model: "/drone_timeline/models/2024-2025.gltf",
+        model: "/drone_timeline/models/2022-2023.glb",
         },
         {
         year: "2023-2024",
         img: "/drone_timeline/imgs/2023-2024.webp",
-        model: "/drone_timeline/models/2024-2025.gltf",
+        model: "/drone_timeline/models/2023-2024.glb",
         },
         {
         year: "2024-2025",
@@ -59,7 +59,7 @@ export default function Home() {
             <VideoBlock src="/videos/MAD_intro_video.mp4" />
 
             <div className='bg-black sm:h-60'>
-                <p className="text-red-500 font-inter font-extrabold text-[50px]/30 pt-5 sm:text-[200px] sm:pl-5 sm:pt-20 text-center sm:text-left" data-aos="fade-up">Our Work</p>
+                <p className="text-red-500 font-inter font-extrabold text-[50px]/30 pt-5 sm:text-[175px] sm:pl-5 sm:pt-20 text-center sm:text-left" data-aos="fade-up">Our Work</p>
             </div>
 
             <div className="bg-black sm:h-100 h-50 flex items-center justify-center">
@@ -82,7 +82,7 @@ export default function Home() {
                 <div className="h-44 sm:h-72" />
 
                 <div className="sm:flex"> 
-                    <p className=" text-white font-inter font-extrabold text-[150px] sm:text-[200px] -tracking-wider leading-35 px-5 sm:p-12 hidden sm:block" data-aos="fade-down">
+                    <p className=" text-white font-inter font-extrabold text-[175px] -tracking-wider leading-35 px-5 sm:p-12 hidden sm:block" data-aos="fade-down">
                         Follow<br />us.
                     </p>
 
