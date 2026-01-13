@@ -33,7 +33,7 @@ export default function Sponsorships() {
                 <p className="text-gray-500 text-lg font-tajawal pb-3">Thank you to all our sponsors:</p>
             </div>
             <div className="flex justify-center items-center">
-                <img src="/images/sponsors.png" alt="Sponsors" className="w-250 h-auto object-cover mb-8"/>
+                <img src="/images/sponsors2.png" alt="Sponsors" className="w-250 h-auto object-cover mb-8"/>
             </div>
 
             <SubHeading text={"Why Sponsor Us?"} />

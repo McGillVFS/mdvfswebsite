@@ -72,7 +72,7 @@ const NavBar = ({}) => {
             {/* Hamburger Menu Button */}
             <button
                 onClick={toggleNav}
-                className={`fixed top-4 right-1 z-50 p-2 ${hamColor}`}
+                className={`fixed top-4 right-1 z-50 p-2 dark:text-white ${hamColor}`}
                 aria-label="Toggle navigation"
                 data-aos="fade-right" 
             >
