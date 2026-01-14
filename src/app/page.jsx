@@ -18,12 +18,12 @@ export default function Home() {
         {
         year: "2020-2021",
         img: "/drone_timeline/imgs/2020-2021.webp",
-        model: "/drone_timeline/models/2022-2023.glb",
+        model: "/drone_timeline/models/2020-2021.png",
         },
         {
         year: "2021-2022",
         img: "/drone_timeline/imgs/2021-2022.webp",
-        model: "/drone_timeline/models/2022-2023.glb",
+        model: "/drone_timeline/models/2021-2022.png",
         },
         {
         year: "2022-2023",
