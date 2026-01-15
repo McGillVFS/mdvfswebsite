@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { useRouter } from 'next/navigation'
 import Title from "../ui/Title"
 import InfoCard from "../ui/InfoCard"
@@ -14,6 +14,11 @@ import { LuGlobe } from "react-icons/lu";
 
 
 export default function Sponsorships() {
+
+    useEffect(() => {
+    document.title = "Sponsorships | McGill Aerial Design";
+    }, []);
+
     var gold_bullets = ["Large corporate logo on club clothing", "Large corporate logo on website and banners", "Distribution of merch at events", "Involvement on social media"]
     var diamond_bullets = ["Large corporate logo on club clothing", "Large corporate logo on website and banners", "Distribution of merch at events", "Involvement on social media", "Access to resume database", "Job/intern postings on internal channels"]
     var platinum_bullets = ["Large corporate logo on club clothing", "Large corporate logo on website and banners", "Distribution of merch at events", "Involvement on social media", "Access to resume database", "Job/intern postings on internal channels", "Tabling and judging during our case competition and drone show"]
@@ -28,7 +33,7 @@ export default function Sponsorships() {
                 <p className="text-gray-500 text-lg font-tajawal pb-3">Thank you to all our sponsors:</p>
             </div>
             <div className="flex justify-center items-center">
-                <img src="/images/sponsors.png" alt="Sponsors" className="w-250 h-auto object-cover mb-8"/>
+                <img src="/images/sponsors2.png" alt="Sponsors" className="w-250 h-auto object-cover mb-8"/>
             </div>
 
             <SubHeading text={"Why Sponsor Us?"} />

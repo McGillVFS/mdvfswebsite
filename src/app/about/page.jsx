@@ -1,17 +1,22 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import Title from "../ui/Title";
 import SubHeading from "../ui/SubHeading";
 import ProfileCard from "../ui/ProfileCard";
 
 export default function About() {
+
+  useEffect(() => {
+  document.title = "About Us | McGill Aerial Design";
+  }, []);
+
   return (
     <div>
       <Title text={"ABOUT US"} />
 
-      <SubHeading text={"WHO WE ARE"} />
+      <SubHeading text={"Who We Are"} />
 
       <div className="md:flex items-center justify-center mx-3">
         <p className="font-tajawal text-black-500 text-xl p-8">
@@ -32,7 +37,7 @@ export default function About() {
         />
       </div>
 
-      <SubHeading text={"OUR TEAM"} />
+      <SubHeading text={"Our Team"} />
 
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-y-0 gap-x-2">
         <ProfileCard
@@ -149,7 +154,7 @@ export default function About() {
           title={"VP Website"}
         />
       </div>
-      <SubHeading text={"AWARDS AND ACHIEVEMENTS"} />
+      <SubHeading text={"Awards and Achievements"} />
 
       <div className = "pl-1">
         <p className="font-tajawal text-black-500 text-xl p-3">2023: Design-Build-Vertical Flight Student Competition - 3rd Place</p>
@@ -159,7 +164,7 @@ export default function About() {
         <p className="font-tajawal text-black-500 text-xl p-3">2025: Design-Build-Vertical Flight Student Competition - Perseverance Award</p>
       </div>
 
-      <SubHeading text={"KEY DATES"} />
+      <SubHeading text={"Key Dates"} />
 
       <div className = "pl-1 pb-2">
         <p className="font-tajawal text-black-500 text-xl p-3">2021: Vertical Flight Society at McGill Founded</p>

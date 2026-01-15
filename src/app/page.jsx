@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { useRouter } from 'next/navigation'
 import Navbar from "./ui/NavBar"
 import Footer from "./ui/Footer"
@@ -8,7 +8,6 @@ import ScrollVideo from "./ui/ScrollVideo"
 import ThreeDModelPopup from "./ui/3DModelPopup"
 import Timeline from "./ui/Timeline"
 import VideoBlock from "./ui/VideoBlock"
-
 
 export default function Home() {
 
@@ -19,22 +18,22 @@ export default function Home() {
         {
         year: "2020-2021",
         img: "/drone_timeline/imgs/2020-2021.webp",
-        model: "/drone_timeline/models/2024-2025.gltf",
+        model: "/drone_timeline/models/2020-2021.png",
         },
         {
         year: "2021-2022",
         img: "/drone_timeline/imgs/2021-2022.webp",
-        model: "/drone_timeline/models/2024-2025.gltf",
+        model: "/drone_timeline/models/2021-2022.png",
         },
         {
         year: "2022-2023",
         img: "/drone_timeline/imgs/2022-2023.webp",
-        model: "/drone_timeline/models/2024-2025.gltf",
+        model: "/drone_timeline/models/2022-2023.glb",
         },
         {
         year: "2023-2024",
         img: "/drone_timeline/imgs/2023-2024.webp",
-        model: "/drone_timeline/models/2024-2025.gltf",
+        model: "/drone_timeline/models/2023-2024.glb",
         },
         {
         year: "2024-2025",
@@ -47,13 +46,20 @@ export default function Home() {
         model: "/drone_timeline/models/2025-2026.gltf",
         }
     ];
+
+    useEffect(() => {
+    document.title = "Home | McGill Aerial Design";
+    document
+      .querySelector('meta[name="description"]')
+      ?.setAttribute("content", "Explore our projects, drones, and innovation at McGill Aerial Design.");
+    }, []);
     
     return (
         <div>
             <VideoBlock src="/videos/MAD_intro_video.mp4" />
 
             <div className='bg-black sm:h-60'>
-                <p className="text-red-500 font-inter font-extrabold text-[50px]/30 pt-5 sm:text-[200px] sm:pl-5 sm:pt-20 text-center sm:text-left" data-aos="fade-up">Our Work</p>
+                <p className="text-red-500 font-inter font-extrabold text-[50px]/30 pt-5 sm:text-[175px] sm:pl-5 sm:pt-20 text-center sm:text-left" data-aos="fade-up">Our Work</p>
             </div>
 
             <div className="bg-black sm:h-100 h-50 flex items-center justify-center">
@@ -66,33 +72,34 @@ export default function Home() {
                 <Timeline timelineItems={timelineItems} setIsOpen={setIsOpen} setModelPath={setModelPath} />
             </div>
 
-            <ScrollVideo overlay="McGill Aerial Design" />
+            <ScrollVideo overlay="" />
 
             <div className="bg-black flex justify-center items-center">
-                <p className = "text-white font-inter font-regular text-[30px] sm:text-[70px] p-5 text-center" data-aos="fade-up">AMBITION.<br />DISCOVERY.</p>
+                <p className = "text-white font-inter font-regular text-[30px] sm:text-[70px] p-5 text-center" data-aos="fade-up">AMBITION. DISCOVERY.</p>
             </div>
 
-            <div className="bg-gradient-to-b from-black to-red-600 sm:flex sm:flex-col justify-end">
+            <div className="bg-gradient-to-b from-black to-red-600 sm:flex sm:flex-col justify-end h-[65vh] sm:h-[90vh]">
                 <div className="h-44 sm:h-72" />
 
                 <div className="sm:flex"> 
-                    <p className=" text-white font-inter font-extrabold text-[150px] sm:text-[200px] -tracking-wider leading-35 px-5 sm:p-12 hidden sm:block" data-aos="fade-down">
+                    <p className=" text-white font-inter font-extrabold text-[175px] -tracking-wider leading-35 px-5 sm:p-12 hidden sm:block" data-aos="fade-down">
                         Follow<br />us.
                     </p>
 
-                    <p className=" text-white font-inter font-extrabold text-[70px] -tracking-wider leading-35 px-5 sm:p-12 sm:hidden flex text-center" data-aos="fade-down">
+                    <p className="text-white font-inter font-extrabold text-[70px] -tracking-wider leading-35 px-5 sm:p-12 sm:hidden flex justify-center text-center" data-aos="fade-down">
                         Follow us.
                     </p>
+
                 
                     <div className="flex w-full items-end justify-center sm:justify-end py-2">
                     <div className="flex flex-wrap items-end p-4 sm:p-10 gap-3 sm:gap-6">
                         {/* TikTok */}
                         <div
-                        className="cursor-pointer size-[18vw] sm:size-[10vw] md:size-[7vw] lg:size-[5vw] xl:size-[4vw] max-w-[10rem] max-h-[10rem] rounded-full bg-white border-2 border-white overflow-hidden flex items-center justify-center transition-transform hover:scale-105"
+                        className="cursor-pointer size-[18vw] max-w-[10rem] max-h-[10rem] rounded-full bg-white border-2 border-white overflow-hidden flex items-center justify-center transition-transform hover:scale-105"
                         data-aos="fade-down"
                         data-aos-delay="300"
                         onClick={() =>
-                            window.open("https://www.tiktok.com/@mcgillmdvfs?lang=en", "_blank")
+                            window.open("https://www.tiktok.com/@mcgillaerialdesign", "_blank")
                         }
                         >
                         <img
@@ -104,11 +111,11 @@ export default function Home() {
 
                         {/* Instagram */}
                         <div
-                        className="cursor-pointer size-[18vw] sm:size-[10vw] md:size-[7vw] lg:size-[5vw] xl:size-[4vw] max-w-[10rem] max-h-[10rem] rounded-full bg-blue-400 border-2 border-white overflow-hidden flex items-center justify-center transition-transform hover:scale-105"
+                        className="cursor-pointer size-[18vw] max-w-[10rem] max-h-[10rem] rounded-full bg-blue-400 border-2 border-white overflow-hidden flex items-center justify-center transition-transform hover:scale-105"
                         data-aos="fade-down"
                         data-aos-delay="450"
                         onClick={() =>
-                            window.open("https://www.instagram.com/mcgill_mdvfs/?hl=en", "_blank")
+                            window.open("https://www.instagram.com/mcgillaerialdesign/", "_blank")
                         }
                         >
                         <img
@@ -120,7 +127,7 @@ export default function Home() {
 
                         {/* LinkedIn */}
                         <div
-                        className="cursor-pointer size-[18vw] sm:size-[10vw] md:size-[7vw] lg:size-[5vw] xl:size-[4vw] max-w-[10rem] max-h-[10rem] rounded-full bg-[#0274B3] border-2 border-white overflow-hidden flex items-center justify-center transition-transform hover:scale-105"
+                        className="cursor-pointer size-[18vw] max-w-[10rem] max-h-[10rem] rounded-full bg-[#0274B3] border-2 border-white overflow-hidden flex items-center justify-center transition-transform hover:scale-105"
                         data-aos="fade-down"
                         data-aos-delay="600"
                         onClick={() =>
@@ -139,7 +146,7 @@ export default function Home() {
 
                         {/* YouTube */}
                         <div
-                        className="cursor-pointer size-[18vw] sm:size-[10vw] md:size-[7vw] lg:size-[5vw] xl:size-[4vw] max-w-[10rem] max-h-[10rem] rounded-full bg-white border-2 border-white overflow-hidden flex items-center justify-center transition-transform hover:scale-105"
+                        className="cursor-pointer size-[18vw] max-w-[10rem] max-h-[10rem] rounded-full bg-white border-2 border-white overflow-hidden flex items-center justify-center transition-transform hover:scale-105"
                         data-aos="fade-down"
                         data-aos-delay="750"
                         onClick={() =>

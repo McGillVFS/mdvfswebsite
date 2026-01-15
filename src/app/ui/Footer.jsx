@@ -60,7 +60,7 @@ const Footer = () => {
     */
 
     return(
-        <div className="hidden sm:flex bg-black h-40 w-full items-center">
+        <div className="hidden sm:flex bg-black h-40 w-full items-center border-t dark:border-white">
 
             <div className="flex min-w-full"> {/* contains two columns, one with mdvfs logo (small) and one with links (large) */}
 

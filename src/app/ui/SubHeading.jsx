@@ -7,7 +7,7 @@ const SubHeading = ({ text }) => {
             {text}
           </h3>
         </div>
-        <div className="flex-grow border-b border-black"></div>
+        <div className="flex-grow border-b border-black dark:border-white"></div>
       </div>
     </>
   )
