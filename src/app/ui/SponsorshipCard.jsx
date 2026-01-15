@@ -7,7 +7,7 @@ const SponsorshipCard = ({ tier, price, bullets }) => {
     ));
 
     return (
-        <div className="flex p-4 bg-white rounded-lg flex-col items-center shadow-md border border-solid border-gray-300">
+        <div className="flex p-4 rounded-lg flex-col items-center shadow-md border border-solid border-gray-300">
             <h1 className="text-lg font-bold font-tajawal text-center">{tier}</h1>
             <h2 className="text-4xl pb-2 font-bold font-tajawal text-center">{price}</h2>
             <ul className="px-8 py-3">{listItems}</ul>
