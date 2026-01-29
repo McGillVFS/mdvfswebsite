@@ -9,10 +9,6 @@ import Popup from "../ui/Popup"
 
 export default function Subteams() {
     
-    useEffect(() => {
-    document.title = "Subteams | McGill Aerial Design";
-    }, []);
-    
     const [isOpen, setIsOpen] = useState(false);
     const [popup, setPopup] = useState("");
 

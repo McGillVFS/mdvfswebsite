@@ -12,10 +12,6 @@ import { LuGlobe } from "react-icons/lu";
 
 
 export default function Join() {
-
-    useEffect(() => {
-    document.title = "Join Us | McGill Aerial Design";
-    }, []);
     
     return (
         <div>

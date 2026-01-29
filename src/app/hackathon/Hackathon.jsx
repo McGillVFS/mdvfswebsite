@@ -7,10 +7,6 @@ import SubHeading from "../ui/SubHeading"
 
 
 export default function Hackathon() {
-
-  useEffect(() => {
-  document.title = "Hackathon | McGill Aerial Design";
-  }, []);
     
     return (
         <div className="pb-65">

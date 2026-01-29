@@ -12,10 +12,6 @@ export default function Research() {
     const [isOpen, setIsOpen] = useState(false);
     const [researchPopup, setResearchPopup] = useState(null);
 
-    useEffect(() => {
-    document.title = "Research | McGill Aerial Design";
-    }, []);
-
     const researchPopupOne = (
         <ResearchPopup 
             year={"2024-2025"}

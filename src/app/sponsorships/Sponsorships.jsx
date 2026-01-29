@@ -15,10 +15,6 @@ import { LuGlobe } from "react-icons/lu";
 
 export default function Sponsorships() {
 
-    useEffect(() => {
-    document.title = "Sponsorships | McGill Aerial Design";
-    }, []);
-
     var gold_bullets = ["Large corporate logo on club clothing", "Large corporate logo on website and banners", "Distribution of merch at events", "Involvement on social media"]
     var diamond_bullets = ["Large corporate logo on club clothing", "Large corporate logo on website and banners", "Distribution of merch at events", "Involvement on social media", "Access to resume database", "Job/intern postings on internal channels"]
     var platinum_bullets = ["Large corporate logo on club clothing", "Large corporate logo on website and banners", "Distribution of merch at events", "Involvement on social media", "Access to resume database", "Job/intern postings on internal channels", "Tabling and judging during our case competition and drone show"]

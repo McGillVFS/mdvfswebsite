@@ -46,13 +46,6 @@ export default function Home() {
         model: "/drone_timeline/models/2025-2026.gltf",
         }
     ];
-
-    useEffect(() => {
-    document.title = "Home | McGill Aerial Design";
-    document
-      .querySelector('meta[name="description"]')
-      ?.setAttribute("content", "Explore our projects, drones, and innovation at McGill Aerial Design.");
-    }, []);
     
     return (
         <div>
