@@ -1,15 +1,12 @@
-"use client"
-import { useEffect } from "react";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Navbar from "./ui/NavBar"
 import Footer from "./ui/Footer"
+import AOSProvider from "./AOSProvider";
 import "./globals.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 // @ts-ignore
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 /*
 const geistSans = Geist({
@@ -40,13 +37,10 @@ export const metadata: Metadata = {
 export default function RootLayout({children,}: Readonly<{children: React.ReactNode;}>)
 {
 
-  useEffect(() => {
-    AOS.init({ duration: 800, once: true });
-  }, []);
-
   return (
     <html lang="en">
       <body>
+        <AOSProvider />
         <Navbar />
         {children}
         <Footer />
