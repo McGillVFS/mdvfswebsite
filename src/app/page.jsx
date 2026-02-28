@@ -16,6 +16,11 @@ export default function Home() {
 
     const timelineItems = [
         {
+        year: "2025-2026",
+        img: "/drone_timeline/imgs/2025-2026.webp",
+        model: "/drone_timeline/models/2025-2026.gltf",
+        },
+        {
         year: "2020-2021",
         img: "/drone_timeline/imgs/2020-2021.webp",
         model: "/drone_timeline/models/2020-2021.png",
@@ -39,11 +44,6 @@ export default function Home() {
         year: "2024-2025",
         img: "/drone_timeline/imgs/2024-2025.webp",
         model: "/drone_timeline/models/2024-2025.gltf",
-        },
-        {
-        year: "2025-2026",
-        img: "/drone_timeline/imgs/2025-2026.webp",
-        model: "/drone_timeline/models/2025-2026.gltf",
         }
     ];
     
