@@ -42,14 +42,9 @@ const NavBar = ({}) => {
             id: 5
         },
         {
-            page: "Hackathon",
-            link: '/hackathon',
-            id: 6
-        },
-        {
             page: "Feedback",
             link: '/feedback',
-            id: 7
+            id: 6
         }
     ]
 

@@ -5,6 +5,7 @@ import { useRouter } from 'next/navigation'
 import Title from "../ui/Title"
 import SubHeading from "../ui/SubHeading"
 
+// NOTE: This was the page for the 2026 Hackathon; now hidden
 
 export default function Hackathon() {
     
