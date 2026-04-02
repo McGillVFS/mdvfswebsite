@@ -7,6 +7,7 @@ import Footer from "./ui/Footer"
 import ScrollVideo from "./ui/ScrollVideo"
 import ThreeDModelPopup from "./ui/3DModelPopup"
 import Timeline from "./ui/Timeline"
+import VideoBlockGradient from "./ui/VideoBlockGradient"
 import VideoBlock from "./ui/VideoBlock"
 
 export default function Home() {
@@ -49,7 +50,7 @@ export default function Home() {
     
     return (
         <div>
-            <VideoBlock src="/videos/MAD_intro_video.mp4" />
+            <VideoBlockGradient src="/videos/MAD_intro_video.mp4" />
 
             <div className='bg-black sm:h-60'>
                 <p className="text-red-500 font-inter font-extrabold text-[50px]/30 pt-5 sm:text-[175px] sm:pl-5 sm:pt-20 text-center sm:text-left" data-aos="fade-up">Our Work</p>
@@ -65,7 +66,7 @@ export default function Home() {
                 <Timeline timelineItems={timelineItems} setIsOpen={setIsOpen} setModelPath={setModelPath} />
             </div>
 
-            <ScrollVideo overlay="" />
+            <VideoBlock src="/videos/MAD_timelapse.mp4" />
 
             <div className="bg-black flex justify-center items-center">
                 <p className = "text-white font-inter font-regular text-[30px] sm:text-[70px] p-5 text-center" data-aos="fade-up">AMBITION. DISCOVERY.</p>
